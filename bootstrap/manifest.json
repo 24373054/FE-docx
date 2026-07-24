@@ -1,0 +1,11 @@
+{
+  "sha256": "7d81042fc819c2de2485ff00a9fd9acb35df51ea75a87b954174893fcb76475f",
+  "parts": [
+    "part-01.b64",
+    "part-02.b64",
+    "part-03.b64",
+    "part-04.b64"
+  ],
+  "compressed_bytes": 103499,
+  "base64_chars": 138000
+}
