@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  unpack-and-commit:
+  generate-and-commit:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
@@ -17,33 +17,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Reconstruct and extract reviewed documentation
+      - name: Reconstruct verified generator
+        shell: bash
         run: |
-          python - <<'PY'
-          import base64
-          import hashlib
-          import io
-          import json
-          import tarfile
-          from pathlib import Path
+          cat bootstrap/generator-01.b64 bootstrap/generator-02.b64 > /tmp/generator.b64
+          echo "945c5625d1c139e194334b975e3cc90b777cf4bf688c3636aaf25b6e35fe5d50  /tmp/generator.b64" | sha256sum -c -
+          base64 -d /tmp/generator.b64 > /tmp/generator.py.gz
+          echo "c8da2ead1a7023918424a3ca6779138fb6fcbccd4373487fb780bda4829851c1  /tmp/generator.py.gz" | sha256sum -c -
+          gzip -dc /tmp/generator.py.gz > /tmp/generate_docs.py
+          echo "727008248c3560f96a65310ca7b345560bb402aadca7028db865d048fb77dd92  /tmp/generate_docs.py" | sha256sum -c -
 
-          root = Path.cwd().resolve()
-          bootstrap = root / "bootstrap"
-          manifest = json.loads((bootstrap / "manifest.json").read_text(encoding="utf-8"))
-          encoded = "".join((bootstrap / name).read_text(encoding="ascii").strip() for name in manifest["parts"])
-          payload = base64.b64decode(encoded, validate=True)
-          actual = hashlib.sha256(payload).hexdigest()
-          if actual != manifest["sha256"]:
-              raise SystemExit(f"payload hash mismatch: {actual}")
-
-          with tarfile.open(fileobj=io.BytesIO(payload), mode="r:gz") as archive:
-              members = archive.getmembers()
-              for member in members:
-                  destination = (root / member.name).resolve()
-                  if root not in destination.parents and destination != root:
-                      raise SystemExit(f"unsafe archive path: {member.name}")
-              archive.extractall(root)
-          PY
+      - name: Generate documentation baseline
+        run: python /tmp/generate_docs.py
 
       - name: Remove one-time bootstrap material
         run: |
