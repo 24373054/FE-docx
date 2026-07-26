@@ -49,7 +49,19 @@ jobs:
           root = Path.cwd().resolve()
           boot = root / 'bootstrap-production'
           manifest = json.loads((boot / 'manifest.json').read_text(encoding='utf-8'))
-          encoded = ''.join((boot / name).read_text(encoding='ascii').strip() for name in manifest['parts'])
+          if manifest.get('format') != 'tar.xz':
+              raise SystemExit('unsupported production payload format')
+
+          chunks = []
+          for name in manifest['parts']:
+              text = (boot / name).read_text(encoding='ascii').strip()
+              actual = hashlib.sha256(text.encode('ascii')).hexdigest()
+              expected = manifest['part_sha256'][name]
+              if actual != expected:
+                  raise SystemExit(f'part hash mismatch {name}: {actual}')
+              chunks.append(text)
+
+          encoded = ''.join(chunks)
           encoded_hash = hashlib.sha256(encoded.encode('ascii')).hexdigest()
           if encoded_hash != manifest['base64_sha256']:
               raise SystemExit(f'base64 hash mismatch: {encoded_hash}')
@@ -58,12 +70,12 @@ jobs:
           if payload_hash != manifest['payload_sha256']:
               raise SystemExit(f'payload hash mismatch: {payload_hash}')
 
-          with tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:
+          with tarfile.open(fileobj=io.BytesIO(payload), mode='r:xz') as archive:
               for member in archive.getmembers():
                   destination = (root / member.name).resolve()
                   if root not in destination.parents and destination != root:
                       raise SystemExit(f'unsafe archive path: {member.name}')
-          (root / '.production-payload.tar.gz').write_bytes(payload)
+          (root / '.production-payload.tar.xz').write_bytes(payload)
           PY
 
       - name: Replace parallel baselines with single production system
@@ -82,10 +94,10 @@ jobs:
           import tarfile
           from pathlib import Path
           root = Path.cwd().resolve()
-          with tarfile.open(root / '.production-payload.tar.gz', mode='r:gz') as archive:
+          with tarfile.open(root / '.production-payload.tar.xz', mode='r:xz') as archive:
               archive.extractall(root)
           PY
-          rm -f .production-payload.tar.gz
+          rm -f .production-payload.tar.xz
           rm -rf bootstrap-production
 
       - name: Regenerate controlled document index
