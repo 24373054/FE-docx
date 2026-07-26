@@ -31,10 +31,15 @@ jobs:
       - name: Generate documentation baseline
         run: python /tmp/generate_docs.py
 
-      - name: Remove one-time bootstrap material
+      - name: Prepare push-safe repository tree
         run: |
+          # GitHub Actions' built-in token may update repository contents but is
+          # not allowed to create, update, or delete workflow files. Keep this
+          # bootstrap workflow unchanged for the push and remove the generated
+          # continuous-quality workflow from the working tree. The connected
+          # GitHub App will delete this bootstrap workflow after verification.
           rm -rf bootstrap
-          rm -f .github/workflows/bootstrap-docs.yml
+          rm -f .github/workflows/documentation-quality.yml
 
       - name: Run documentation quality gate
         run: python scripts/repo_quality_check.py
