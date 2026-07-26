@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence Manifest",
+  "type": "object",
+  "required": [
+    "case_id",
+    "evidence_id",
+    "source",
+    "acquired_at",
+    "hashes",
+    "tool",
+    "custody"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "evidence_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "acquired_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "hashes": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "tool": {
+      "type": "object"
+    },
+    "custody": {
+      "type": "array",
+      "minItems": 1
+    },
+    "classification": {
+      "enum": [
+        "raw",
+        "derived",
+        "presentation"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
