@@ -33,35 +33,51 @@ jobs:
             echo "needed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Reconstruct and extract reviewed v2 payload
+      - name: Reconstruct verified v2 generator
         if: steps.detect.outputs.needed == 'true'
         shell: bash
         run: |
           python - <<'PY'
           import base64
+          import gzip
           import hashlib
-          import io
           import json
-          import tarfile
           from pathlib import Path
 
-          root = Path.cwd().resolve()
-          boot = root / 'bootstrap-v2'
+          boot = Path('bootstrap-v2')
           manifest = json.loads((boot / 'manifest.json').read_text(encoding='utf-8'))
           encoded = ''.join((boot / name).read_text(encoding='ascii').strip() for name in manifest['parts'])
-          encoded_hash = hashlib.sha256(encoded.encode('ascii')).hexdigest()
-          if encoded_hash != manifest['base64_sha256']:
-              raise SystemExit(f'base64 hash mismatch: {encoded_hash}')
-          payload = base64.b64decode(encoded, validate=True)
-          payload_hash = hashlib.sha256(payload).hexdigest()
-          if payload_hash != manifest['payload_sha256']:
-              raise SystemExit(f'payload hash mismatch: {payload_hash}')
-          with tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:
-              for member in archive.getmembers():
-                  destination = (root / member.name).resolve()
-                  if root not in destination.parents and destination != root:
-                      raise SystemExit(f'unsafe archive path: {member.name}')
-              archive.extractall(root)
+          if hashlib.sha256(encoded.encode('ascii')).hexdigest() != manifest['base64_sha256']:
+              raise SystemExit('base64 hash mismatch')
+          compressed = base64.b64decode(encoded, validate=True)
+          if hashlib.sha256(compressed).hexdigest() != manifest['gzip_sha256']:
+              raise SystemExit('gzip hash mismatch')
+          script = gzip.decompress(compressed)
+          if hashlib.sha256(script).hexdigest() != manifest['script_sha256']:
+              raise SystemExit('script hash mismatch')
+          Path('/tmp/generate_v2_docs.py').write_bytes(script)
+          PY
+
+      - name: Generate and copy v2 documentation
+        if: steps.detect.outputs.needed == 'true'
+        shell: bash
+        run: |
+          python /tmp/generate_v2_docs.py
+          python - <<'PY'
+          import shutil
+          from pathlib import Path
+          source = Path('/tmp/fe_v2_payload')
+          target = Path.cwd()
+          if not source.exists():
+              raise SystemExit('generator output missing')
+          for path in source.rglob('*'):
+              rel = path.relative_to(source)
+              dest = target / rel
+              if path.is_dir():
+                  dest.mkdir(parents=True, exist_ok=True)
+              else:
+                  dest.parent.mkdir(parents=True, exist_ok=True)
+                  shutil.copy2(path, dest)
           PY
           rm -rf bootstrap-v2
 
