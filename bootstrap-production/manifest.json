@@ -1,0 +1,19 @@
+{
+  "version": "3.0.0",
+  "parts": [
+    "part-01.b64",
+    "part-02.b64",
+    "part-03.b64",
+    "part-04.b64",
+    "part-05.b64",
+    "part-06.b64",
+    "part-07.b64",
+    "part-08.b64"
+  ],
+  "base64_sha256": "a496cc0813fbf08d86cb14c346a2d6eadc5cc0594bb1a771101933cad37f838b",
+  "payload_sha256": "f08e650283fa7bfce79a231c7784ece1c4bc8cdb4757d398034285a0ce3de249",
+  "expected_documents": 85,
+  "expected_lines": 25573,
+  "expected_traceability_links": 908,
+  "generated_at": "2026-07-27"
+}
