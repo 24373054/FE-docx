@@ -1,0 +1,135 @@
+name: production-materialize
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+    paths:
+      - 'bootstrap-production/**'
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  materialize:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR head branch
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Detect pending payload
+        id: detect
+        shell: bash
+        run: |
+          if [ -f bootstrap-production/manifest.json ]; then
+            echo 'needed=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'needed=false' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Reconstruct and verify production payload
+        if: steps.detect.outputs.needed == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import base64
+          import hashlib
+          import io
+          import json
+          import tarfile
+          from pathlib import Path
+
+          root = Path.cwd().resolve()
+          boot = root / 'bootstrap-production'
+          manifest = json.loads((boot / 'manifest.json').read_text(encoding='utf-8'))
+          encoded = ''.join((boot / name).read_text(encoding='ascii').strip() for name in manifest['parts'])
+          encoded_hash = hashlib.sha256(encoded.encode('ascii')).hexdigest()
+          if encoded_hash != manifest['base64_sha256']:
+              raise SystemExit(f'base64 hash mismatch: {encoded_hash}')
+          payload = base64.b64decode(encoded, validate=True)
+          payload_hash = hashlib.sha256(payload).hexdigest()
+          if payload_hash != manifest['payload_sha256']:
+              raise SystemExit(f'payload hash mismatch: {payload_hash}')
+
+          with tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:
+              for member in archive.getmembers():
+                  destination = (root / member.name).resolve()
+                  if root not in destination.parents and destination != root:
+                      raise SystemExit(f'unsafe archive path: {member.name}')
+          (root / '.production-payload.tar.gz').write_bytes(payload)
+          PY
+
+      - name: Replace parallel baselines with single production system
+        if: steps.detect.outputs.needed == 'true'
+        shell: bash
+        run: |
+          rm -rf \
+            00-governance 01-regulatory 02-product 03-architecture 04-methods \
+            05-quality 06-operations 07-organization 08-planning 09-templates \
+            10-reference 11-v2-foundation 12-research 13-system \
+            14-method-validation 15-implementation 16-operational-playbooks \
+            catalogs schemas scripts
+          rm -f README.md CONTRIBUTING.md SECURITY.md LICENSE .gitignore
+          rm -f .github/CODEOWNERS .github/pull_request_template.md
+          python - <<'PY'
+          import tarfile
+          from pathlib import Path
+          root = Path.cwd().resolve()
+          with tarfile.open(root / '.production-payload.tar.gz', mode='r:gz') as archive:
+              archive.extractall(root)
+          PY
+          rm -f .production-payload.tar.gz
+          rm -rf bootstrap-production
+
+      - name: Regenerate controlled document index
+        if: steps.detect.outputs.needed == 'true'
+        run: python scripts/build_document_index.py
+
+      - name: Run production quality and traceability gates
+        if: steps.detect.outputs.needed == 'true'
+        shell: bash
+        run: |
+          python scripts/repo_quality_check.py
+          python scripts/validate_traceability.py
+
+      - name: Verify replacement scope
+        if: steps.detect.outputs.needed == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          legacy = [
+              '11-v2-foundation','12-research','13-system',
+              '14-method-validation','15-implementation','16-operational-playbooks'
+          ]
+          present = [name for name in legacy if Path(name).exists()]
+          if present:
+              raise SystemExit(f'legacy parallel directories remain: {present}')
+          roots = [f'{i:02d}' for i in range(11)]
+          docs = []
+          for path in Path('.').rglob('*.md'):
+              top = path.parts[0].split('-', 1)[0] if path.parts else ''
+              if top in roots or path.parts[0] == 'catalogs':
+                  docs.append(path)
+          lines = sum(len(path.read_text(encoding='utf-8').splitlines()) for path in docs)
+          print(f'controlled documents={len(docs)} controlled lines={lines}')
+          if len(docs) < 85 or lines < 25000:
+              raise SystemExit('production volume gate failed')
+          PY
+
+      - name: Commit materialized production documentation
+        if: steps.detect.outputs.needed == 'true'
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'docs: replace parallel baselines with production v3 system'
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
