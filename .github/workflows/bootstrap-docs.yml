@@ -1,6 +1,7 @@
 name: bootstrap-documentation
 
 on:
+  workflow_dispatch:
   push:
     branches: ["main", "docs/v1-foundation"]
     paths: ["bootstrap/READY"]
