@@ -1,0 +1,96 @@
+name: v2-materialize
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'bootstrap-v2/**'
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  materialize:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR head branch
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Detect already materialized branch
+        id: detect
+        shell: bash
+        run: |
+          if [ -f bootstrap-v2/manifest.json ]; then
+            echo "needed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "needed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Reconstruct and extract reviewed v2 payload
+        if: steps.detect.outputs.needed == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import base64
+          import hashlib
+          import io
+          import json
+          import tarfile
+          from pathlib import Path
+
+          root = Path.cwd().resolve()
+          boot = root / 'bootstrap-v2'
+          manifest = json.loads((boot / 'manifest.json').read_text(encoding='utf-8'))
+          encoded = ''.join((boot / name).read_text(encoding='ascii').strip() for name in manifest['parts'])
+          encoded_hash = hashlib.sha256(encoded.encode('ascii')).hexdigest()
+          if encoded_hash != manifest['base64_sha256']:
+              raise SystemExit(f'base64 hash mismatch: {encoded_hash}')
+          payload = base64.b64decode(encoded, validate=True)
+          payload_hash = hashlib.sha256(payload).hexdigest()
+          if payload_hash != manifest['payload_sha256']:
+              raise SystemExit(f'payload hash mismatch: {payload_hash}')
+          with tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:
+              for member in archive.getmembers():
+                  destination = (root / member.name).resolve()
+                  if root not in destination.parents and destination != root:
+                      raise SystemExit(f'unsafe archive path: {member.name}')
+              archive.extractall(root)
+          PY
+          rm -rf bootstrap-v2
+
+      - name: Run documentation quality gate
+        if: steps.detect.outputs.needed == 'true'
+        run: python scripts/repo_quality_check.py
+
+      - name: Verify v2 volume
+        if: steps.detect.outputs.needed == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          roots = ['11-v2-foundation','12-research','13-system','14-method-validation','15-implementation','16-operational-playbooks']
+          files=[]
+          for name in roots:
+              files.extend(p for p in Path(name).rglob('*.md') if p.is_file())
+          lines=sum(len(p.read_text(encoding='utf-8').splitlines()) for p in files)
+          print(f'v2 files={len(files)} v2 lines={lines}')
+          if len(files) < 35 or lines < 22000:
+              raise SystemExit('v2 volume gate failed')
+          PY
+
+      - name: Commit materialized v2 documentation
+        if: steps.detect.outputs.needed == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "docs: materialize v2 forensic engineering deepening"
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
