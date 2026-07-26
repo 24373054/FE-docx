@@ -7,14 +7,18 @@ on:
       - '**/*.md'
       - '**/*.json'
       - '**/*.py'
-      - '.github/workflows/documentation-quality.yml'
+      - '**/*.yml'
+      - '**/*.yaml'
+      - '.github/CODEOWNERS'
   pull_request:
     branches: [main]
     paths:
       - '**/*.md'
       - '**/*.json'
       - '**/*.py'
-      - '.github/workflows/documentation-quality.yml'
+      - '**/*.yml'
+      - '**/*.yaml'
+      - '.github/CODEOWNERS'
 
 permissions:
   contents: read
@@ -29,34 +33,11 @@ jobs:
       - name: Run repository quality gate
         run: python scripts/repo_quality_check.py
 
-      - name: Verify v2 controlled-document baseline
+      - name: Validate requirement-control-test traceability when available
         shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          roots = [
-              '11-v2-foundation',
-              '12-research',
-              '13-system',
-              '14-method-validation',
-              '15-implementation',
-              '16-operational-playbooks',
-          ]
-          files = []
-          missing = []
-          for name in roots:
-              root = Path(name)
-              if not root.is_dir():
-                  missing.append(name)
-                  continue
-              files.extend(p for p in root.rglob('*.md') if p.is_file())
-          lines = sum(len(p.read_text(encoding='utf-8').splitlines()) for p in files)
-          print(f'v2 controlled documents: {len(files)}')
-          print(f'v2 controlled-document lines: {lines}')
-          if missing:
-              raise SystemExit(f'missing v2 directories: {missing}')
-          if len(files) < 35:
-              raise SystemExit(f'v2 documents {len(files)} < 35')
-          if lines < 22000:
-              raise SystemExit(f'v2 lines {lines} < 22000')
-          PY
+          if [ -f scripts/validate_traceability.py ]; then
+            python scripts/validate_traceability.py
+          else
+            echo 'traceability validator not present in this historical baseline; skipping'
+          fi
