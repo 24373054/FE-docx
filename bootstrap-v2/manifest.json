@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "parts": [
+    "generator-01.b64",
+    "generator-02.b64",
+    "generator-03.b64",
+    "generator-04.b64",
+    "generator-05.b64",
+    "generator-06.b64"
+  ],
+  "base64_sha256": "181cdc9d2f78084bcc604509f08c81eef0dade774ec8fbd4189d9585ef263ff7",
+  "gzip_sha256": "7d90e57f6679d0d647947c822c3e72245b76d2855377ba6b0f9edcf11c158853",
+  "script_sha256": "dfa364d233d74ddf669535d2877a4cf423c9ab7443f48ba5f5a95148317b1692",
+  "expected_v2_files": 35,
+  "expected_v2_lines": 23244
+}
