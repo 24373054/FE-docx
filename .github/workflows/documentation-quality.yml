@@ -1,0 +1,62 @@
+name: documentation-quality
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - '**/*.json'
+      - '**/*.py'
+      - '.github/workflows/documentation-quality.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - '**/*.json'
+      - '**/*.py'
+      - '.github/workflows/documentation-quality.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run repository quality gate
+        run: python scripts/repo_quality_check.py
+
+      - name: Verify v2 controlled-document baseline
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          roots = [
+              '11-v2-foundation',
+              '12-research',
+              '13-system',
+              '14-method-validation',
+              '15-implementation',
+              '16-operational-playbooks',
+          ]
+          files = []
+          missing = []
+          for name in roots:
+              root = Path(name)
+              if not root.is_dir():
+                  missing.append(name)
+                  continue
+              files.extend(p for p in root.rglob('*.md') if p.is_file())
+          lines = sum(len(p.read_text(encoding='utf-8').splitlines()) for p in files)
+          print(f'v2 controlled documents: {len(files)}')
+          print(f'v2 controlled-document lines: {lines}')
+          if missing:
+              raise SystemExit(f'missing v2 directories: {missing}')
+          if len(files) < 35:
+              raise SystemExit(f'v2 documents {len(files)} < 35')
+          if lines < 22000:
+              raise SystemExit(f'v2 lines {lines} < 22000')
+          PY
