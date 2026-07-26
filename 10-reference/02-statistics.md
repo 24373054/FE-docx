@@ -1,75 +1,80 @@
 ---
 document_id: REF-002
-title: 仓库统计
-version: 1.0.0
-status: 基线
+title: 仓库统计与计量口径
+version: 2.0.0
+status: 受控基线
 owner: 质量负责人
-effective_date: 2026-07-25
-review_cycle: 重大变化时或至少每12个月
+effective_date: 2026-07-26
+review_cycle: 每次重大合并后复核
 ---
-# 仓库统计
+# 仓库统计与计量口径
 
-- 文本文件：61
-- 文本行数：15300
+## 1. 已验证建设规模
 
-- `.github/workflows/bootstrap-docs.yml`：53行；SHA前缀`a916446352931ad2`。
-- `.github/workflows/documentation-quality.yml`：11行；SHA前缀`737710ed8d10ae28`。
-- `00-governance/01-charter.md`：21行；SHA前缀`071ab8aeb116f82f`。
-- `00-governance/02-decisions.md`：21行；SHA前缀`6b4ae30727e3db76`。
-- `00-governance/03-document-control.md`：21行；SHA前缀`56fd116accf2bbc5`。
-- `01-regulatory/01-regulatory-map.md`：21行；SHA前缀`466c06011e67059d`。
-- `01-regulatory/02-cma-cnas.md`：21行；SHA前缀`fba31a643ef9e097`。
-- `01-regulatory/03-beijing-path.md`：21行；SHA前缀`2666f4c718e8d960`。
-- `01-regulatory/04-evidence-rules.md`：21行；SHA前缀`ddbb0d88e00e8a20`。
-- `01-regulatory/05-conclusion-boundaries.md`：21行；SHA前缀`c4bbd237d4217693`。
-- `01-regulatory/06-regulator-questions.md`：21行；SHA前缀`30c86d9d5b63e936`。
-- `02-product/01-product-definition.md`：21行；SHA前缀`ac6ff4692234d952`。
-- `02-product/02-workflow.md`：21行；SHA前缀`73d2c34e52583e60`。
-- `02-product/03-stage-gates.md`：21行；SHA前缀`1127bef86501a2c5`。
-- `03-architecture/01-evidence.md`：21行；SHA前缀`2845749a32ac29b9`。
-- `03-architecture/02-data.md`：21行；SHA前缀`027d5ca3bfed323c`。
-- `03-architecture/03-security.md`：21行；SHA前缀`376e6724911ad991`。
-- `03-architecture/04-continuity.md`：21行；SHA前缀`d3dbefaab823d6b4`。
-- `04-methods/auth.md`：21行；SHA前缀`7135114aadadba43`。
-- `04-methods/btc.md`：21行；SHA前缀`96a3ee32e0de15f0`。
-- `04-methods/cluster.md`：21行；SHA前缀`73a893a1ad8aff43`。
-- `04-methods/defi.md`：21行；SHA前缀`c090e960b1dcbc36`。
-- `04-methods/evm.md`：21行；SHA前缀`39536558893f77c1`。
-- `04-methods/label.md`：21行；SHA前缀`3ea858df97a4996a`。
-- `04-methods/mix.md`：21行；SHA前缀`b916f521504e4ed9`。
-- `04-methods/tron.md`：21行；SHA前缀`050459f3f04447de`。
-- `04-methods/xchain.md`：21行；SHA前缀`5c2fb28ac9fe9b55`。
-- `05-quality/01-quality-system.md`：21行；SHA前缀`281fe164cd366e74`。
-- `05-quality/02-method-tool-validation.md`：21行；SHA前缀`6823f7585857e627`。
-- `05-quality/03-datasets-comparison.md`：21行；SHA前缀`14299a715de15586`。
-- `05-quality/04-capa-audit-review.md`：21行；SHA前缀`af5cd8951adf5be1`。
-- `06-operations/01-case-node.md`：21行；SHA前缀`584ceff39a3c4f27`。
-- `06-operations/02-release-incident.md`：21行；SHA前缀`95f3f45af13cb849`。
-- `07-organization/01-roles-competence.md`：21行；SHA前缀`c639e40d9f3e4ea1`。
-- `08-planning/01-roadmap-budget.md`：21行；SHA前缀`07b9c69f0a5b2107`。
-- `08-planning/02-risk-procurement.md`：21行；SHA前缀`f8e32b6d67423bb5`。
-- `09-templates/frm-001.md`：21行；SHA前缀`eec8517db8ff4469`。
-- `09-templates/frm-002.md`：21行；SHA前缀`bebaa46019a909cf`。
-- `09-templates/frm-003.md`：21行；SHA前缀`d425cff451dfb0e4`。
-- `09-templates/frm-004.md`：21行；SHA前缀`947360c03bfddcb2`。
-- `09-templates/frm-005.md`：21行；SHA前缀`0253d2159aaed844`。
-- `09-templates/frm-006.md`：21行；SHA前缀`5a9eaf627c738fad`。
-- `09-templates/frm-007.md`：21行；SHA前缀`16a50828501c8684`。
-- `09-templates/frm-008.md`：21行；SHA前缀`f4881bb95f6d2e04`。
-- `09-templates/frm-009.md`：21行；SHA前缀`f095755ece46341e`。
-- `09-templates/frm-010.md`：21行；SHA前缀`e018636ee6411c6b`。
-- `09-templates/frm-011.md`：21行；SHA前缀`96cc5bc0330f4292`。
-- `09-templates/frm-012.md`：21行；SHA前缀`f5ab30fa8949f89d`。
-- `09-templates/frm-013.md`：21行；SHA前缀`f0819c72270e0423`。
-- `09-templates/frm-014.md`：21行；SHA前缀`746df599fe407221`。
-- `09-templates/frm-015.md`：21行；SHA前缀`9b31b207977618a3`。
-- `09-templates/frm-016.md`：21行；SHA前缀`077f8fce39e89118`。
-- `10-reference/01-official-sources.md`：19行；SHA前缀`5835a62f64fcea4c`。
-- `CONTRIBUTING.md`：3行；SHA前缀`cf540074ca85b8ee`。
-- `README.md`：14行；SHA前缀`482e5876338b3ebd`。
-- `bootstrap/manifest.json`：11行；SHA前缀`db2370b12a3bae14`。
-- `catalogs/control-catalog.md`：3851行；SHA前缀`21dd0d324da22e20`。
-- `catalogs/requirements-catalog.md`：3011行；SHA前缀`34e716cb3a6ce932`。
-- `catalogs/test-case-catalog.md`：7211行；SHA前缀`a3c0621db5153975`。
-- `schemas/evidence-manifest.schema.json`：48行；SHA前缀`a6abcaa0e0e98dc9`。
-- `scripts/repo_quality_check.py`：18行；SHA前缀`ccc2b1319d731f4c`。
+|阶段|验证对象|文件变化|新增行|删除行|证据|
+|---|---|---:|---:|---:|---|
+|v1基线|首次完整文档体系物化提交|66个文件变化|15,309|70|GitHub Actions提交日志与基线提交|
+|v2深化|PR #2正式文档差异|36个文件|23,314|0|GitHub PR差异统计|
+|v2主题文档|`11-v2-foundation`至`16-operational-playbooks`|35份受控文档|23,244|0|`REF-003`逐文件行数与哈希|
+
+用户提出的“本轮增添及修改内容不得低于8,000行”以v2主题文档行数计量；23,244行超过验收下限。
+
+## 2. 为什么不在本文件硬编码全仓总行数
+
+全仓总量会随README、来源登记、质量脚本和后续修订变化。将其写成静态数字容易造成统计文件与实际仓库不一致。因此：
+
+- 当前全仓文件数和行数由 `scripts/repo_quality_check.py` 运行时计算；
+- v2固定验收规模由 `10-reference/03-v2-change-statistics.md` 保存逐文件哈希；
+- GitHub PR和commit compare用于证明特定变更集的新增、删除和文件数量；
+- 本文件只保留已经完成且具有稳定证据的里程碑统计。
+
+## 3. 行数计算规则
+
+1. 文本编码为UTF-8。
+2. 行数使用Python `str.splitlines()`口径。
+3. 全仓质量门统计扩展名为 `.md`、`.py`、`.json`、`.yml`、`.yaml` 的文件。
+4. `.git`、临时缓存、构建产物和二进制文件不计入。
+5. v2主题行数仅统计六个v2目录内的Markdown文件。
+6. 重命名、删除和生成器临时载荷不作为实质文档新增。
+7. 行数是规模指标，不替代来源准确性、内部一致性、可执行性和方法有效性审查。
+
+## 4. 当前强制门槛
+
+|检查项|门槛|
+|---|---:|
+|全仓受统计文本文件|不少于20个|
+|全仓受统计文本行数|不少于8,000行|
+|Markdown受控文档编号|必须存在且唯一|
+|JSON文件|必须可解析|
+|v2目录|六个目录全部存在|
+|v2受控文档|不少于35份|
+|v2主题内容|不少于22,000行|
+|一次性载荷|`bootstrap`和`bootstrap-v2`不得存在|
+|版本入口|README必须声明v2.0.0|
+
+## 5. 质量证明的限制
+
+仓库统计、CI通过和文件哈希只能证明：
+
+- 指定版本的文件存在；
+- 内容在校验后未发生未记录变化；
+- 自动检查规则在该版本上通过；
+- 本轮文档建设量达到内部要求。
+
+它们不能证明：
+
+- 已取得CMA、CNAS或司法鉴定许可；
+- 某一方法已被主管机关或法院认可；
+- 某一链上关联结论在个案中必然成立；
+- 文档可替代正式标准全文、法律意见或主管机关书面答复。
+
+## 6. 复核流程
+
+重大合并后由质量负责人：
+
+1. 运行 `python scripts/repo_quality_check.py`；
+2. 保存控制台输出和对应commit SHA；
+3. 核对PR变更文件数和增删行数；
+4. 对法规、标准和协议来源执行查新；
+5. 更新变更记录、影响分析和必要的培训记录；
+6. 发现静态统计与实际结果不一致时，以脚本输出和GitHub对象为准并立即修订本文。
