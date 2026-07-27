@@ -23,9 +23,10 @@
 
 ```bash
 python scripts/build_document_index.py
+python scripts/build_document_index.py --check
 python scripts/repo_quality_check.py
 python scripts/validate_traceability.py
 python scripts/validate_internal_links.py
 ```
 
-所有检查通过后再提交PR。
+所有检查通过后再提交PR。由自动化生成的提交还应由仓库所有者或获授权维护者追加一次可审查提交，以确保永久质量工作流在受信任主体上下文中完成最终验证。
