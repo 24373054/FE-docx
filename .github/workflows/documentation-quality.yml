@@ -1,43 +1,42 @@
 name: documentation-quality
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '**/*.md'
-      - '**/*.json'
-      - '**/*.py'
-      - '**/*.yml'
-      - '**/*.yaml'
-      - '.github/CODEOWNERS'
   pull_request:
     branches: [main]
     paths:
       - '**/*.md'
+      - '**/*.csv'
       - '**/*.json'
       - '**/*.py'
-      - '**/*.yml'
-      - '**/*.yaml'
-      - '.github/CODEOWNERS'
+      - '.github/workflows/documentation-quality.yml'
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - '**/*.csv'
+      - '**/*.json'
+      - '**/*.py'
+      - '.github/workflows/documentation-quality.yml'
 
 permissions:
   contents: read
 
 jobs:
-  quality:
-    runs-on: ubuntu-latest
+  production-documentation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run repository quality gate
+      - name: Verify generated document index
+        run: python scripts/build_document_index.py --check
+
+      - name: Run structural and content quality gate
         run: python scripts/repo_quality_check.py
 
-      - name: Validate requirement-control-test traceability when available
-        shell: bash
-        run: |
-          if [ -f scripts/validate_traceability.py ]; then
-            python scripts/validate_traceability.py
-          else
-            echo 'traceability validator not present in this historical baseline; skipping'
-          fi
+      - name: Validate requirements-control-test traceability
+        run: python scripts/validate_traceability.py
+
+      - name: Validate internal links
+        run: python scripts/validate_internal_links.py
