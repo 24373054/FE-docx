@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/case.schema.json",
+  "title": "Controlled Case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "status",
+    "title",
+    "authorization_id",
+    "technical_questions",
+    "created_at"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^CASE-[0-9]{4}-[0-9]{4,}$"
+    },
+    "status": {
+      "enum": [
+        "lead",
+        "pre-review",
+        "accepted",
+        "acquiring",
+        "analyzing",
+        "review",
+        "approval",
+        "released",
+        "archived",
+        "paused",
+        "rejected",
+        "withdrawn",
+        "reopened",
+        "destroyed"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 4
+    },
+    "authorization_id": {
+      "type": "string"
+    },
+    "technical_questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "excluded_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "chains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "time_range": {
+      "type": "object",
+      "required": [
+        "start",
+        "end",
+        "timezone"
+      ],
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timezone": {
+          "type": "string"
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
