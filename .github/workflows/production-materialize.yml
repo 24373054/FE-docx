@@ -81,8 +81,21 @@ jobs:
           if source_hash != manifest['source_sha256']:
               raise SystemExit(f'source SHA-256 mismatch: {source_hash}')
 
-          Path('/tmp/generate_production_v3.py').write_bytes(source)
-          print(f'verified generator sha256={source_hash} size={len(source)}')
+          marker = b', pandas as pd'
+          if source.count(marker) != 1:
+              raise SystemExit('unexpected optional pandas import count')
+          runtime_source = source.replace(marker, b'')
+          if len(runtime_source) != manifest['runtime_source_size_bytes']:
+              raise SystemExit(f'runtime source size mismatch: {len(runtime_source)}')
+          runtime_hash = hashlib.sha256(runtime_source).hexdigest()
+          if runtime_hash != manifest['runtime_source_sha256']:
+              raise SystemExit(f'runtime source SHA-256 mismatch: {runtime_hash}')
+
+          Path('/tmp/generate_production_v3.py').write_bytes(runtime_source)
+          print(
+              f'verified source sha256={source_hash}; '
+              f'runtime sha256={runtime_hash}; removed one unused optional import'
+          )
           PY
 
       - name: Generate production v3 in an isolated workspace
