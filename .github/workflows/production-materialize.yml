@@ -29,17 +29,18 @@ jobs:
         id: detect
         shell: bash
         run: |
-          if [ -f bootstrap-production/manifest.json ] && [ -f bootstrap-production/payload.tar.xz ]; then
+          if [ -f bootstrap-production/manifest.json ]; then
             echo 'needed=true' >> "$GITHUB_OUTPUT"
           else
             echo 'needed=false' >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Verify binary payload and archive paths
+      - name: Reconstruct and verify production payload
         if: steps.detect.outputs.needed == 'true'
         shell: bash
         run: |
           python - <<'PY'
+          import base64
           import hashlib
           import json
           import tarfile
@@ -48,17 +49,34 @@ jobs:
           root = Path.cwd().resolve()
           boot = root / 'bootstrap-production'
           manifest = json.loads((boot / 'manifest.json').read_text(encoding='utf-8'))
-          payload_path = boot / 'payload.tar.xz'
-          payload = payload_path.read_bytes()
-
-          if manifest.get('format') != 'tar.xz':
+          if manifest.get('format') != 'tar.xz+base64-parts':
               raise SystemExit('unsupported payload format')
+
+          chunks = []
+          for name in manifest['parts']:
+              text = (boot / name).read_text(encoding='ascii').strip()
+              actual = hashlib.sha256(text.encode('ascii')).hexdigest()
+              expected = manifest['part_sha256'][name]
+              if actual != expected:
+                  raise SystemExit(f'part hash mismatch {name}: {actual}')
+              chunks.append(text)
+
+          encoded = ''.join(chunks)
+          if len(encoded) != manifest['base64_size_chars']:
+              raise SystemExit(f'base64 size mismatch: {len(encoded)}')
+          encoded_hash = hashlib.sha256(encoded.encode('ascii')).hexdigest()
+          if encoded_hash != manifest['base64_sha256']:
+              raise SystemExit(f'base64 hash mismatch: {encoded_hash}')
+
+          payload = base64.b64decode(encoded, validate=True)
           if len(payload) != manifest['payload_size_bytes']:
               raise SystemExit(f'payload size mismatch: {len(payload)}')
-          actual = hashlib.sha256(payload).hexdigest()
-          if actual != manifest['payload_sha256']:
-              raise SystemExit(f'payload SHA-256 mismatch: {actual}')
+          payload_hash = hashlib.sha256(payload).hexdigest()
+          if payload_hash != manifest['payload_sha256']:
+              raise SystemExit(f'payload SHA-256 mismatch: {payload_hash}')
 
+          payload_path = root / '.production-payload.tar.xz'
+          payload_path.write_bytes(payload)
           with tarfile.open(payload_path, mode='r:xz') as archive:
               for member in archive.getmembers():
                   if member.issym() or member.islnk():
@@ -66,7 +84,7 @@ jobs:
                   destination = (root / member.name).resolve()
                   if root not in destination.parents and destination != root:
                       raise SystemExit(f'unsafe archive path: {member.name}')
-          print(f"verified payload sha256={actual} size={len(payload)}")
+          print(f'verified payload sha256={payload_hash} size={len(payload)}')
           PY
 
       - name: Replace legacy and parallel documentation with production v3
@@ -84,9 +102,10 @@ jobs:
           python - <<'PY'
           import tarfile
           from pathlib import Path
-          with tarfile.open(Path('bootstrap-production/payload.tar.xz'), mode='r:xz') as archive:
+          with tarfile.open(Path('.production-payload.tar.xz'), mode='r:xz') as archive:
               archive.extractall(Path('.'))
           PY
+          rm -f .production-payload.tar.xz
           rm -rf bootstrap-production
 
       - name: Regenerate and verify production indexes
