@@ -23,9 +23,11 @@
   "compressed_sha256": "b90bcaf2bfb11cbe0fde519902081dcc776d4dfd97e1f229edd84302a30e8286",
   "source_size_bytes": 218233,
   "source_sha256": "9fecef9493dc7bc8eb56dca64f8e619334b9b07be09f73abddad62ff06be5fab",
+  "runtime_source_size_bytes": 218219,
+  "runtime_source_sha256": "4fe91e9d75041cf6f7f9e42eb8642511e05ef5ae3bbe359f99390cfeaf80a1cd",
   "expected_controlled_documents": 108,
   "expected_total_text_lines": 43875,
   "expected_traceability_links": 1631,
   "generated_at": "2026-07-27",
-  "retry_nonce": "diagnostic-artifact-002"
+  "retry_nonce": "remove-unused-pandas-import-003"
 }
