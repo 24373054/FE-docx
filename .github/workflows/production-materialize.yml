@@ -86,21 +86,44 @@ jobs:
           PY
 
       - name: Generate production v3 in an isolated workspace
+        id: generate
         if: steps.detect.outputs.needed == 'true'
+        continue-on-error: true
         shell: bash
         run: |
           rm -rf /tmp/fe-docx-production-v3
           mkdir -p /tmp/fe-docx-production-v3
+          set +e
           (
             cd /tmp/fe-docx-production-v3
             python /tmp/generate_production_v3.py
-          )
+          ) > /tmp/production-generator.log 2>&1
+          rc=$?
+          set -e
+          cat /tmp/production-generator.log
+          echo "exit_code=$rc" >> "$GITHUB_OUTPUT"
+          if [ "$rc" -ne 0 ]; then
+            exit "$rc"
+          fi
           test -f /tmp/fe-docx-production-v3/README.md
           test -f /tmp/fe-docx-production-v3/scripts/repo_quality_check.py
           test -f /tmp/fe-docx-production-v3/catalogs/traceability.csv
 
+      - name: Upload generator diagnostic
+        if: steps.generate.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-generator-diagnostic
+          path: /tmp/production-generator.log
+          retention-days: 1
+
+      - name: Stop after generator failure
+        if: steps.generate.outcome == 'failure'
+        shell: bash
+        run: exit 1
+
       - name: Replace legacy and parallel documentation with production v3
-        if: steps.detect.outputs.needed == 'true'
+        if: steps.detect.outputs.needed == 'true' && steps.generate.outcome == 'success'
         shell: bash
         run: |
           rm -rf \
@@ -115,14 +138,14 @@ jobs:
           rm -rf /tmp/fe-docx-production-v3 bootstrap-production
 
       - name: Regenerate and verify production indexes
-        if: steps.detect.outputs.needed == 'true'
+        if: steps.detect.outputs.needed == 'true' && steps.generate.outcome == 'success'
         shell: bash
         run: |
           python scripts/build_document_index.py
           python scripts/build_document_index.py --check
 
       - name: Run production quality gates
-        if: steps.detect.outputs.needed == 'true'
+        if: steps.detect.outputs.needed == 'true' && steps.generate.outcome == 'success'
         shell: bash
         run: |
           python scripts/repo_quality_check.py
@@ -130,7 +153,7 @@ jobs:
           python scripts/validate_internal_links.py
 
       - name: Verify production replacement scope
-        if: steps.detect.outputs.needed == 'true'
+        if: steps.detect.outputs.needed == 'true' && steps.generate.outcome == 'success'
         shell: bash
         run: |
           python - <<'PY'
@@ -164,7 +187,7 @@ jobs:
           PY
 
       - name: Commit materialized production documentation
-        if: steps.detect.outputs.needed == 'true'
+        if: steps.detect.outputs.needed == 'true' && steps.generate.outcome == 'success'
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
