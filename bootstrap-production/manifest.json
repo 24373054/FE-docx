@@ -1,0 +1,36 @@
+{
+  "version": "3.0.0",
+  "format": "tar.xz+base64-parts",
+  "parts": [
+    "part-01.b64", "part-02.b64", "part-03.b64", "part-04.b64",
+    "part-05.b64", "part-06.b64", "part-07.b64", "part-08.b64",
+    "part-09.b64", "part-10.b64", "part-11.b64", "part-12.b64",
+    "part-13.b64", "part-14.b64", "part-15.b64", "part-16.b64"
+  ],
+  "part_sha256": {
+    "part-01.b64": "f27d329f03664872d0c592f2fd22359b77e9b88304fac2ead5b07caaf49b4e48",
+    "part-02.b64": "caa83ec34322966d491fc35f6d1a9f3a8b5e43f22775e81a43e9c517fe55a457",
+    "part-03.b64": "2aaee61ac40df6c1be7d26f398f3e7b5846e0f431eac4e46ad55992fac364f6b",
+    "part-04.b64": "09a5bfe56016e8fd1f04cace89210c7250bcbed1cde4db5fb84252b1e489b525",
+    "part-05.b64": "bbf9373449dbf8b0eb1e085f946c628d8480b1693c82f464b8f20a61c6bb1d9c",
+    "part-06.b64": "6d9b63ed1f8bed9612c2097b74c01d4cf5a844caa81bcb90d037347b73b0fb87",
+    "part-07.b64": "afb10642d60e0010c552a0b049dd4e1fdd8e391102557ada4339a10d78485976",
+    "part-08.b64": "664be125e23bbe70a862191a83e587edb59a75ba1329bde887646805f88abb22",
+    "part-09.b64": "3dfc9d7d9bf1b3168aec19ecd06b5a31401498de0a55f14cd16973acc92735f3",
+    "part-10.b64": "ade4b67d2441c1742908840194d7ccd22d422005d9de2e2ed4192ae8f57093dd",
+    "part-11.b64": "004d892c1b4ee386294ec513dccb28e656ffe04089f9d55d1070e91d7187163c",
+    "part-12.b64": "51699952e1d393da021e03a4eb29a2d8af087b2dbe81eccf89734a7dc9f9df1e",
+    "part-13.b64": "665db214f139c8db6f7c4fff8ace9694ac3f1fbc16fd9641758331342c82b09c",
+    "part-14.b64": "af3047c76178d719a9c0d2553f1d4698d30febdbef7da2b4176aa5ba11b5961d",
+    "part-15.b64": "6b64a2f1f9d3ff02bd144c218ff2e98eb805784011aa96b54da3a11b0a063fda",
+    "part-16.b64": "e1fbdd2bcc63b8ad05577faf7dc43061047ae58ba03c828c1817ac64a2a7f9ef"
+  },
+  "base64_size_chars": 273936,
+  "base64_sha256": "68560da4a1a1c36858199e91c914504b358cb8d89d4ed6ab2dc8acf898fe3a5a",
+  "payload_size_bytes": 205452,
+  "payload_sha256": "4a58f48691ac22a204d5640ab2a862e81b49d9c5a1c6de3bb9ba34b910d2f7a6",
+  "expected_controlled_documents": 108,
+  "expected_total_text_lines": 43875,
+  "expected_traceability_links": 1631,
+  "generated_at": "2026-07-27"
+}
