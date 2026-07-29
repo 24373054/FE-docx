@@ -130,7 +130,7 @@ classification: 内部受控
 |`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|72|`590c9438f574f20b`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|177|`8b6ea62e9d30d552`|
 |`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
-|`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|326|`92f15b83f41753b7`|
+|`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|352|`b365ab85cc7cf9fd`|
 
 ## 维护规则
 

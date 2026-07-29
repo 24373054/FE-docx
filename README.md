@@ -92,6 +92,7 @@
 |`10-reference/`|来源、证据登记、索引、开放事项和发布记录|以带证据等级与限制的登记册为准|
 |`catalogs/`|需求、控制、测试和映射|当前是生成清单，不是批准或执行证据|
 |`schemas/`|机器可读对象结构草案|需与真实证据包演练共同验证|
+|`validation-evidence/`|公开、无敏感信息的实际运行证据包|失败和阻断结果同样保留；不含真实案件|
 |`scripts/`|文档索引与基础质量检查|只证明结构一致性，不证明业务内容正确|
 
 ## 5. 优先阅读
@@ -118,6 +119,7 @@
 
 1. [`区块链电子数据首批方法验证总计划`](08-planning/09-validation-master-plan.md)
 2. [`验证证据与运行登记册`](10-reference/10-validation-evidence-register.md)
+3. [`首个被阻断的Bitcoin公开端点探针证据包`](validation-evidence/public/VAL-METHOD-T1-PROBE-001/)
 
 方法进入验证前，至少完成：
 
