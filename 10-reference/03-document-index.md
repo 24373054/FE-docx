@@ -41,7 +41,7 @@ classification: 内部受控
 |`02-product/02-personas-use-cases.md`|PRD-002|用户角色与用例|产品需求|产品负责人|340|`663cf554b5f30664`|
 |`02-product/03-functional-requirements.md`|PRD-003|功能需求规格|产品需求|产品负责人|395|`f16456ddef319c01`|
 |`02-product/04-case-lifecycle.md`|PRD-004|案件生命周期与状态机|产品需求|产品负责人|400|`bb8fa08de8949508`|
-|`02-product/05-evidence-package.md`|PRD-005|证据包产品规范|产品需求|产品负责人|400|`7797e144b3c206c7`|
+|`02-product/05-evidence-package.md`|PRD-005|证据包产品规范|产品需求|产品负责人|330|`7bb2cc75ac8bcfaa`|
 |`02-product/06-analysis-workbench.md`|PRD-006|分析工作台需求|产品需求|产品负责人|395|`c86ddbeaf900f519`|
 |`02-product/07-reporting-explanation.md`|PRD-007|报告与技术解释需求|产品需求|产品负责人|400|`ce2ed83caefa3cbf`|
 |`02-product/08-nonfunctional-requirements.md`|PRD-008|非功能需求规格|产品需求|产品负责人|390|`f45ca0482963e958`|
@@ -51,8 +51,8 @@ classification: 内部受控
 |`03-architecture/01-context-trust-boundaries.md`|ARC-001|系统上下文与信任边界|架构标准|架构负责人|375|`09cd3522fc139277`|
 |`03-architecture/02-logical-architecture.md`|ARC-002|逻辑架构设计|架构标准|架构负责人|390|`bdc1ff8a3f589977`|
 |`03-architecture/03-deployment-architecture.md`|ARC-003|部署架构与环境隔离|架构标准|架构负责人|390|`caa1d875427f6e3a`|
-|`03-architecture/04-evidence-data-model.md`|ARC-004|证据对象与数据模型|架构标准|数据架构师|390|`d281c0b58ae9e59d`|
-|`03-architecture/05-provenance-chain-of-custody.md`|ARC-005|数据血缘与保管链架构|架构标准|数据架构师|390|`ce17ea275207be5b`|
+|`03-architecture/04-evidence-data-model.md`|ARC-004|证据对象与数据模型|架构标准|数据架构师|335|`11050ec81ea06b17`|
+|`03-architecture/05-provenance-chain-of-custody.md`|ARC-005|数据血缘与保管链架构|架构标准|数据架构师|372|`7ca148da9bf11066`|
 |`03-architecture/06-node-data-source-governance.md`|ARC-006|节点与数据源治理架构|架构标准|节点负责人|390|`74226b377a55eeda`|
 |`03-architecture/07-security-architecture.md`|ARC-007|安全架构与威胁模型|架构标准|安全负责人|385|`c32631c0478640f1`|
 |`03-architecture/08-observability-audit.md`|ARC-008|可观测性与审计日志架构|架构标准|平台负责人|385|`7ed7cca753d75d86`|

@@ -356,7 +356,7 @@ PRD-005-C008,PRD-005,操作日志,detective,产品负责人,FRM-010,not_implemen
 PRD-005-C009,PRD-005,录像索引,corrective,产品负责人,FRM-010,not_implemented
 PRD-005-C010,PRD-005,复核记录,preventive,产品负责人,FRM-010,not_implemented
 PRD-005-C011,PRD-005,报告与附件,detective,产品负责人,FRM-010,not_implemented
-PRD-005-C012,PRD-005,Merkle根,corrective,产品负责人,FRM-010,not_implemented
+PRD-005-C012,PRD-005,包根哈希,corrective,产品负责人,FRM-010,not_implemented
 PRD-005-C013,PRD-005,数字签名,preventive,产品负责人,FRM-010,not_implemented
 PRD-005-C014,PRD-005,加密封装,detective,产品负责人,FRM-010,not_implemented
 PRD-005-C015,PRD-005,最小披露包,corrective,产品负责人,FRM-010,not_implemented

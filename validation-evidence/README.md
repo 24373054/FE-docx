@@ -13,6 +13,8 @@
 
 ## 根哈希算法
 
+当前算法标识：`sha256-sorted-path-lines-v1`。
+
 1. 对manifest中每个对象的精确UTF-8文件字节计算SHA-256和字节数；
 2. 按POSIX相对路径升序排列；
 3. 每行写为`<sha256>  <size_bytes>  <path>\n`；
