@@ -111,6 +111,11 @@
 2. [`市场与竞争证据登记册`](10-reference/09-market-and-competition-evidence-register.md)
 3. [`官方来源登记册`](10-reference/01-official-source-register.md)
 
+### 管理与审计
+
+1. [`管理层决策包`](00-governance/09-management-decision-pack.md)
+2. [`接管阶段完成与一致性审计报告`](10-reference/12-takeover-completion-and-consistency-audit.md)
+
 ### 方法、质量与运行
 
 在治理重构完成前，03至09目录文件仅用来收集问题和设计验证，不直接授权真实案件操作。
