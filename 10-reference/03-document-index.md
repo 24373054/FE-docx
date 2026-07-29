@@ -13,7 +13,7 @@ classification: 内部受控
 
 # 受控文档索引
 
-本索引由脚本生成，共登记 **109** 份受控文档。SHA-256前16位用于发现非预期变化，不能替代完整制品签名。
+本索引由脚本生成，共登记 **111** 份受控文档。SHA-256前16位用于发现非预期变化，不能替代完整制品签名。
 
 |路径|文档ID|标题|类型|责任人|行数|SHA-256前16位|
 |---|---|---|---|---|---:|---|
@@ -45,6 +45,7 @@ classification: 内部受控
 |`02-product/08-nonfunctional-requirements.md`|PRD-008|非功能需求规格|产品需求|产品负责人|390|`822f53bedb566150`|
 |`02-product/09-release-acceptance.md`|PRD-009|产品发布与验收准则|产品程序|产品负责人|400|`0d55de3293424e0f`|
 |`02-product/10-product-roadmap.md`|PRD-010|产品能力路线图|产品计划|产品负责人|370|`b98b448c8bcc7f79`|
+|`02-product/11-market-user-and-competition-baseline.md`|PRD-011|区块链电子数据技术服务市场、用户与竞争基线|产品计划|产品研究负责人|588|`6da3d6de526649ff`|
 |`03-architecture/01-context-trust-boundaries.md`|ARC-001|系统上下文与信任边界|架构标准|架构负责人|375|`3f088d68e8f7d91d`|
 |`03-architecture/02-logical-architecture.md`|ARC-002|逻辑架构设计|架构标准|架构负责人|390|`ccd1fd54b4bd63ab`|
 |`03-architecture/03-deployment-architecture.md`|ARC-003|部署架构与环境隔离|架构标准|架构负责人|390|`6b8c1eee87e1b774`|
@@ -119,13 +120,14 @@ classification: 内部受控
 |`09-templates/14-training-authorization.md`|FRM-014|人员培训、考核与授权记录|受控模板|记录责任人|209|`624e30e299159587`|
 |`09-templates/15-regulatory-query.md`|FRM-015|主管机关问题与答复登记表|受控模板|记录责任人|209|`b728afd3d2fa81bb`|
 |`09-templates/16-management-review-agenda.md`|FRM-016|管理评审议程与决议记录|受控模板|记录责任人|215|`0bd55bcc2c3e3c73`|
-|`10-reference/01-official-source-register.md`|REF-001|官方来源登记册|参考登记|合规负责人|62|`037e31b56c6ba138`|
+|`10-reference/01-official-source-register.md`|REF-001|官方来源登记册|参考登记|合规负责人|62|`89eb060f29f1ee39`|
 |`10-reference/02-glossary.md`|REF-002|术语与缩略语|参考词典|质量负责人|46|`ef75eadf85b31195`|
 |`10-reference/04-traceability-overview.md`|REF-004|需求、控制、测试与证据追踪说明|参考说明|测试负责人|50|`6f926a17d6255ad4`|
 |`10-reference/05-production-readiness-checklist.md`|REF-005|生产交付就绪检查表|交付检查|质量负责人|65|`5bdd38f9d45b4f9e`|
 |`10-reference/06-open-issues-and-assumptions.md`|REF-006|开放事项、假设与监管待确认清单|风险登记|项目负责人|32|`1e6f9302469a3fc8`|
 |`10-reference/07-release-notes.md`|REF-007|发布说明|发布记录|配置管理员|38|`88c7082b78f141fc`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|177|`8b6ea62e9d30d552`|
+|`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
 
 ## 维护规则
 
