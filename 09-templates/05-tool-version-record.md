@@ -1,11 +1,11 @@
 ---
 document_id: FRM-005
 title: 工具与版本登记表
-version: 3.0.0-draft
+version: 0.2.0
 status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 待指定（未签批）
+owner: 工具管理员
+approver: 质量负责人（未签批）
 effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
@@ -208,3 +208,15 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次演练后的组件与状态字段
+
+|字段|要求|
+|---|---|
+|组件清单|逻辑工具包含的可执行文件、Shell、运行时、库、操作系统和模型逐项登记|
+|哈希状态|每个组件分别为`recorded`、`not_available`或`not_applicable`并说明原因|
+|验证证据等级|单样本复算、回归、边界、安全、性能和独立复核分别记录|
+|批准状态|`not_validated`、`validation_in_progress`、`approved_limited`、`approved`、`suspended`或`retired`|
+|环境绑定|批准是否绑定主机、镜像、配置、依赖锁和人员范围|
+
+第一次演练见[`工具登记`](../validation-evidence/public/SIM-FORM-GOVERNANCE-001-V1/records/tool-version.md)。PowerShell版本可识别且单样本结果通过，但制品、.NET组件和供应链未冻结，整体为`not_validated`。

@@ -1,11 +1,11 @@
 ---
 document_id: FRM-007
 title: 标签来源与实体归属评估表
-version: 3.0.0-draft
+version: 0.2.0
 status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 待指定（未签批）
+owner: 标签与情报负责人
+approver: 技术负责人（未签批）
 effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
@@ -208,3 +208,15 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次演练后的标签分层字段
+
+|字段|要求|
+|---|---|
+|主张类型|地址展示、脚本映射、服务关联、机构归属、自然人归属或控制主张|
+|主体层级|地址、脚本、钱包、产品、服务、机构或自然人，不得跨级继承|
+|派生方法|来源直接声明、签名证明、设备证据、链上规则或浏览器显示|
+|控制时间|历史创建、观察时点和当前控制分别记录；未知时不得默认持续|
+|处置|`accepted_limited`、`candidate`、`conflicted`、`rejected`或`expired`|
+
+第一次演练见[`标签评估`](../validation-evidence/public/SIM-FORM-GOVERNANCE-001-V1/records/label-assessment.md)。浏览器显示地址只能保留为有限来源观察，不能证明自然人身份、私钥控制或资产权属。

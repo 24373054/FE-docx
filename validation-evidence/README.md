@@ -30,3 +30,4 @@
 |[`GT-BTC-GENESIS-001-V1`](./public/GT-BTC-GENESIS-001-V1/)|Bitcoin创世区块原始字节独立计算|truth_prepared|已批准真值或T1方法通过|
 |[`SIM-E2E-BTC-GENESIS-001-V1`](./public/SIM-E2E-BTC-GENESIS-001-V1/)|六份模板第一次实测、PowerShell跨实现复算和离线恢复|technical_reproduction_passed_governance_blocked|独立人员复核、方法/工具/模板批准或生产能力|
 |[`SIM-FORM-BTC-CONFLICT-001-V1`](./public/SIM-FORM-BTC-CONFLICT-001-V1/)|六份模板第二次冲突/阻断场景演练和父包再摄取|expected_conflict_detected_governance_blocked|父包自包含副本、独立人员复核或模板批准|
+|[`SIM-FORM-GOVERNANCE-001-V1`](./public/SIM-FORM-GOVERNANCE-001-V1/)|其余十份模板第一次项目事实演练|records_filled_governance_unapproved|真实受案、人员授权、监管答复、管理评审决议或模板批准|

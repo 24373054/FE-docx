@@ -1,11 +1,11 @@
 ---
 document_id: FRM-001
 title: 案件受理与预审表
-version: 3.0.0-draft
+version: 0.2.0
 status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 待指定（未签批）
+owner: 受理负责人
+approver: 项目发起人（未签批）
 effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
@@ -214,3 +214,15 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次演练后的强制补充字段
+
+|字段|要求|
+|---|---|
+|请求类型|`internal_rnd`、`technical_service`、`judicial_appraisal`、`partner_support`或其他批准枚举|
+|服务资格状态|记录本机构是否具备该请求所需的登记、许可、人员和报告资格|
+|真实案件门|`not_applicable`、`passed`或`blocked`并说明授权、冲突、能力和数据保护状态|
+|研究/案件双重决定|允许内部研究但拒绝真实案件时必须分别记录，不得用“附条件受理”掩盖|
+|决定有效期|前置条件变化、期限到期或范围扩大时重新预审|
+
+第一次演练见[`内部研发预审记录`](../validation-evidence/public/SIM-FORM-GOVERNANCE-001-V1/records/case-intake.md)。当前只能附条件接受内部研发，并明确拒绝真实案件和对外报告；结果为`partial_pass`。第二次不同场景和公司具名复核前，本模板保持草案。

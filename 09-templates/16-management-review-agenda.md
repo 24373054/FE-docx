@@ -1,11 +1,11 @@
 ---
 document_id: FRM-016
 title: 管理评审议程与决议记录
-version: 3.0.0-draft
+version: 0.2.0
 status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 待指定（未签批）
+owner: 质量负责人
+approver: 项目发起人（未签批）
 effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
@@ -213,3 +213,16 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次演练后的会议与决议状态
+
+|字段|要求|
+|---|---|
+|记录用途|议程草案、会前材料、会议纪要、决议或行动跟踪|
+|会议状态|`not_scheduled`、`scheduled`、`held`、`minutes_pending`或`minutes_confirmed`|
+|输入截止基线|数据截止时间、Git提交、报告版本和未提供输入|
+|法定出席与冲突|必要角色、实际参会人、缺席、利益冲突声明和回避|
+|决定ID与生效|每项决定的批准人、不同意见、资源授权证据和生效条件|
+|行动签收|责任人接受、期限、预算来源和关闭证据|
+
+第一次演练见[`管理评审议程预演`](../validation-evidence/public/SIM-FORM-GOVERNANCE-001-V1/records/management-review.md)。当前未排期、未开会、无参会人和决议；不得把议程完整性自检写成管理评审已运行。

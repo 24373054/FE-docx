@@ -1,11 +1,11 @@
 ---
 document_id: FRM-011
 title: 技术分析报告模板
-version: 3.0.0-draft
+version: 0.2.0
 status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 待指定（未签批）
+owner: 报告编制负责人
+approver: 报告批准人（未指定）
 effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
@@ -207,3 +207,15 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次演练后的报告资格字段
+
+|字段|要求|
+|---|---|
+|报告资格|内部模拟、研发记录、技术服务报告、合作方附件或司法鉴定意见；必须与主体资格一致|
+|主张类别|可验证事实、规则推断、统计推断、假设或无法判断逐项标记|
+|证据状态|每项主张绑定对象ID、真值/来源等级和复核状态|
+|发布范围|内部、指定接收方、公开或禁止发布|
+|发布状态|`draft`、`technical_reviewed`、`quality_reviewed`、`approved`、`released`、`withdrawn`|
+
+第一次演练见[`内部模拟报告记录`](../validation-evidence/public/SIM-FORM-GOVERNANCE-001-V1/records/technical-report.md)。技术事实可复算，但方法、工具、独立人员和发布均未批准；报告资格只能是内部模拟。
