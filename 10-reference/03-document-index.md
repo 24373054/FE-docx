@@ -26,7 +26,7 @@ classification: 内部受控
 |`00-governance/07-release-baseline-policy.md`|GOV-007|发布、基线与撤回政策|治理政策|发布经理|174|`c799445d4cf03a45`|
 |`00-governance/08-takeover-maturity-and-remediation-baseline.md`|GOV-008|项目接管审计、文档成熟度与重构治理基线|治理政策|项目接管负责人|412|`3f833bded7690aa3`|
 |`00-governance/09-management-decision-pack.md`|GOV-009|区块链电子数据司法取证项目管理层决策包|治理政策|项目发起人|497|`54aaaadfb402fd53`|
-|`00-governance/10-company-execution-authorization-pack.md`|GOV-010|公司人员任命、独立复核与外部行动执行授权包|治理政策|项目发起人|647|`1e966d5ee07e71c4`|
+|`00-governance/10-company-execution-authorization-pack.md`|GOV-010|公司人员任命、独立复核与外部行动执行授权包|治理政策|项目发起人|648|`63c36d8be5c17696`|
 |`01-regulatory/01-regulatory-map.md`|REG-001|监管制度关系与双轨进入图|监管研究|合规负责人|199|`17cffd5c2f6881ec`|
 |`01-regulatory/02-cma-one-list-one-library.md`|REG-002|CMA一单一库能力决策与申报准备|监管程序|合规负责人|206|`6d4c33cc49ae8b4d`|
 |`01-regulatory/03-cnas-accreditation.md`|REG-003|CNAS司法鉴定与法庭科学机构认可准备|监管程序|质量负责人|212|`b5bc3e7dc135a602`|
@@ -129,12 +129,12 @@ classification: 内部受控
 |`10-reference/04-traceability-overview.md`|REF-004|需求、控制、测试与证据追踪说明|参考说明|测试负责人|175|`b5f2de0dbb8b02da`|
 |`10-reference/05-production-readiness-checklist.md`|REF-005|生产、试点与申报就绪检查表|交付检查|质量负责人|103|`b4abce87ca8d1225`|
 |`10-reference/06-open-issues-and-assumptions.md`|REF-006|开放事项、假设与监管待确认清单|风险登记|项目接管负责人|89|`e5e921ce38207af4`|
-|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|532|`aca391613060dc63`|
+|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|548|`edc022a3fba5864a`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|187|`8a05ab8472347f76`|
 |`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
 |`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|590|`c1c4cac18021cc33`|
 |`10-reference/11-sample-and-ground-truth-register.md`|REF-011|首批样本与真值候选登记册|参考登记|样本与真值负责人|236|`05cd2903b2174ea5`|
-|`10-reference/12-takeover-completion-and-consistency-audit.md`|REF-012|项目接管阶段完成与一致性审计报告|参考登记|项目接管负责人|513|`ea28eae26839c32d`|
+|`10-reference/12-takeover-completion-and-consistency-audit.md`|REF-012|项目接管阶段完成与一致性审计报告|参考登记|项目接管负责人|534|`8e3a0fe75b0a54b2`|
 
 ## 维护规则
 
