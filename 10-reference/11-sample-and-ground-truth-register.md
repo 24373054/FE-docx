@@ -1,7 +1,7 @@
 ---
 document_id: REF-011
 title: 首批样本与真值候选登记册
-version: 0.1.0
+version: 0.1.1
 status: 研究底稿
 document_type: 参考登记
 owner: 样本与真值负责人
@@ -203,10 +203,11 @@ classification: 内部受控
 |---|---|---|
 |VAL-METHOD-T1-PROBE-001|BTC-T1-N-001 BTC-T1-B-006 BTC-T3-C-001 BTC-T3-C-002|公开端点字段冲突和表示差异；运行blocked|
 |GT-BTC-GENESIS-001-V1|BTC-T1-N-001 BTC-T1-B-006 BTC-T3-C-001 BTC-T3-C-002|两个来源原始字节一致；独立计算得到交易数1；truth_prepared|
+|SIM-E2E-BTC-GENESIS-001-V1|BTC-T1-N-001|PowerShell/.NET跨实现复算和整包恢复通过；因同一研究会话不构成人员独立复核，真值状态不升级|
 |VAL-METHOD-T1-PROBE-001摘要中的Ethereum观察|EVM-T1-N-001 EVM-T3-C-001|一个端点成功 一个内部错误；未成独立包|
 |VAL-METHOD-T1-PROBE-001摘要中的TRON观察|TRON-T1-N-001 TRON-T1-B-006 TRON-T3-C-001|单一来源且字段缺失；未成独立包|
 
-公开Bitcoin探针包见[`VAL-METHOD-T1-PROBE-001`](../validation-evidence/public/VAL-METHOD-T1-PROBE-001/)，原始字节GT2准备包见[`GT-BTC-GENESIS-001-V1`](../validation-evidence/public/GT-BTC-GENESIS-001-V1/)。
+公开Bitcoin探针包见[`VAL-METHOD-T1-PROBE-001`](../validation-evidence/public/VAL-METHOD-T1-PROBE-001/)，原始字节GT2准备包见[`GT-BTC-GENESIS-001-V1`](../validation-evidence/public/GT-BTC-GENESIS-001-V1/)，记录链演练包见[`SIM-E2E-BTC-GENESIS-001-V1`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/)。
 
 ## 10. 近期动作
 
@@ -231,4 +232,5 @@ classification: 内部受控
 
 |版本|日期|变更|状态|
 |---|---|---|---|
+|0.1.1|2026-07-30|登记Bitcoin正常样本的跨实现和整包恢复证据但不升级真值状态|研究底稿|
 |0.1.0|2026-07-30|建立三链 六场景族共90个候选案例和状态门|研究底稿|

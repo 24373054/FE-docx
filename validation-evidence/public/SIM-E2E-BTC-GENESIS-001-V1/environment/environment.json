@@ -1,0 +1,21 @@
+{
+  "environment_id": "ENV-SIM-BTC-PS-001",
+  "captured_at": "2026-07-30T01:51:49+08:00",
+  "operating_system": "Windows",
+  "powershell_version": "7.6.4",
+  "runtime_components": [
+    "System.Convert.FromHexString",
+    "System.Security.Cryptography.SHA256"
+  ],
+  "workspace_commit_before_package": "5258ae19e0a4baaecc3771fc4883841655946c0d",
+  "network_used": false,
+  "time_zone": "Asia/Shanghai (+08:00)",
+  "asset_registration": "not_implemented",
+  "clock_sync_evidence": "not_recorded",
+  "security_baseline_evidence": "not_recorded",
+  "limitations": [
+    "Executable and runtime component hashes were not recorded",
+    "Environment was not independently reproduced by a different person",
+    "This environment is not approved for production evidence handling"
+  ]
+}

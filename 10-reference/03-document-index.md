@@ -108,15 +108,15 @@ classification: 内部受控
 |`08-planning/08-kpi-dashboard.md`|PLN-008|项目与质量看板设计|实施计划|项目经理|369|`24a934b920e2d3b5`|
 |`08-planning/09-validation-master-plan.md`|PLN-009|区块链电子数据首批方法验证总计划|实施计划|方法验证负责人|532|`5ba890ad3e95a463`|
 |`09-templates/01-case-intake-form.md`|FRM-001|案件受理与预审表|受控模板|记录责任人|216|`0fc4459ee1470bff`|
-|`09-templates/02-authorization-scope-form.md`|FRM-002|授权与范围确认表|受控模板|记录责任人|202|`d1932b0f546f4d40`|
-|`09-templates/03-acquisition-record.md`|FRM-003|数据采集会话记录|受控模板|记录责任人|216|`559228a42942bdce`|
-|`09-templates/04-evidence-item-register.md`|FRM-004|证据对象登记表|受控模板|记录责任人|217|`74c68c98ae11859c`|
+|`09-templates/02-authorization-scope-form.md`|FRM-002|授权与范围确认表|受控模板|合规负责人|214|`94c9eb757c435ee3`|
+|`09-templates/03-acquisition-record.md`|FRM-003|数据采集会话记录|受控模板|采集负责人|232|`0ee6bd0cc79d0c50`|
+|`09-templates/04-evidence-item-register.md`|FRM-004|证据对象登记表|受控模板|证据管理员|230|`e8a22ba4d14e42ad`|
 |`09-templates/05-tool-version-record.md`|FRM-005|工具与版本登记表|受控模板|记录责任人|210|`e6ad995c8f356bab`|
 |`09-templates/06-analysis-hypothesis-log.md`|FRM-006|分析假设与反例日志|受控模板|记录责任人|195|`f0f8da140e4956ff`|
 |`09-templates/07-label-source-assessment.md`|FRM-007|标签来源与实体归属评估表|受控模板|记录责任人|210|`154d6bcd2d2b0b84`|
-|`09-templates/08-method-validation-record.md`|FRM-008|方法确认记录|受控模板|记录责任人|209|`aa456874aeb72ce8`|
-|`09-templates/09-tool-validation-record.md`|FRM-009|工具验证记录|受控模板|记录责任人|209|`9dca39fcf2c74ec8`|
-|`09-templates/10-review-checklist.md`|FRM-010|技术与质量复核检查表|受控模板|记录责任人|202|`8f3addccdc78ffb7`|
+|`09-templates/08-method-validation-record.md`|FRM-008|方法确认记录|受控模板|方法负责人|220|`7bcb30ca4d7ae9d0`|
+|`09-templates/09-tool-validation-record.md`|FRM-009|工具验证记录|受控模板|工具负责人|222|`5cf9a8e7f61fe802`|
+|`09-templates/10-review-checklist.md`|FRM-010|技术与质量复核检查表|受控模板|质量负责人|216|`13be04be645c743c`|
 |`09-templates/11-report-template.md`|FRM-011|技术分析报告模板|受控模板|记录责任人|209|`a59ec4cbad3c0548`|
 |`09-templates/12-capa-form.md`|FRM-012|不符合与CAPA记录|受控模板|记录责任人|209|`dac1f4b0fa7481c0`|
 |`09-templates/13-change-request.md`|FRM-013|变更申请与影响分析表|受控模板|记录责任人|210|`7bea0d8a4781b7fb`|
@@ -131,8 +131,8 @@ classification: 内部受控
 |`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|94|`cbfbfd2cc8d5bb43`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|177|`8b6ea62e9d30d552`|
 |`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
-|`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|438|`03e288a6bcc8ecec`|
-|`10-reference/11-sample-and-ground-truth-register.md`|REF-011|首批样本与真值候选登记册|参考登记|样本与真值负责人|234|`2d5276d6c5271fef`|
+|`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|495|`86d9a7fe008a9ed1`|
+|`10-reference/11-sample-and-ground-truth-register.md`|REF-011|首批样本与真值候选登记册|参考登记|样本与真值负责人|236|`05cd2903b2174ea5`|
 |`10-reference/12-takeover-completion-and-consistency-audit.md`|REF-012|项目接管阶段完成与一致性审计报告|参考登记|项目接管负责人|380|`a3b4b4a99aeae484`|
 
 ## 维护规则

@@ -28,3 +28,4 @@
 |---|---|---|---|
 |[`VAL-METHOD-T1-PROBE-001`](./public/VAL-METHOD-T1-PROBE-001/)|公共端点探索与冲突记录|blocked|方法通过或数据源批准|
 |[`GT-BTC-GENESIS-001-V1`](./public/GT-BTC-GENESIS-001-V1/)|Bitcoin创世区块原始字节独立计算|truth_prepared|已批准真值或T1方法通过|
+|[`SIM-E2E-BTC-GENESIS-001-V1`](./public/SIM-E2E-BTC-GENESIS-001-V1/)|六份模板第一次实测、PowerShell跨实现复算和离线恢复|technical_reproduction_passed_governance_blocked|独立人员复核、方法/工具/模板批准或生产能力|
