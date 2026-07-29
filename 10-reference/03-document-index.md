@@ -97,7 +97,7 @@ classification: 内部受控
 |`07-organization/04-training-authorization.md`|ORG-004|培训、考核与授权计划|组织程序|人员负责人|387|`696e0e39249438d5`|
 |`07-organization/05-independence-conflicts.md`|ORG-005|人员独立性与利益冲突管理|组织政策|质量负责人|342|`4cf541a194d019aa`|
 |`07-organization/06-staffing-plan.md`|ORG-006|两年人员配置与继任计划|组织计划|人员负责人|362|`3de2efa0196d2fbc`|
-|`08-planning/01-24-month-roadmap.md`|PLN-001|24个月集成路线图|实施计划|项目负责人|344|`d5978d507c4d25f9`|
+|`08-planning/01-24-month-roadmap.md`|PLN-001|24个月双轨研发与准入路线图|实施计划|项目负责人|568|`0799a794ef0acbd1`|
 |`08-planning/02-work-breakdown.md`|PLN-002|工作分解结构与完成定义|实施计划|项目经理|389|`b9edfc3fabe2cea6`|
 |`08-planning/03-budget-procurement.md`|PLN-003|预算与采购计划|实施计划|财务负责人|394|`8ae67fff90da9f7b`|
 |`08-planning/04-laboratory-buildout.md`|PLN-004|实验室建设项目计划|实施计划|实验室负责人|399|`4c9f214289278b32`|
