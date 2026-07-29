@@ -119,7 +119,8 @@
 
 1. [`区块链电子数据首批方法验证总计划`](08-planning/09-validation-master-plan.md)
 2. [`验证证据与运行登记册`](10-reference/10-validation-evidence-register.md)
-3. [`首个被阻断的Bitcoin公开端点探针证据包`](validation-evidence/public/VAL-METHOD-T1-PROBE-001/)
+3. [`首批样本与真值候选登记册`](10-reference/11-sample-and-ground-truth-register.md)
+4. [`首个被阻断的Bitcoin公开端点探针证据包`](validation-evidence/public/VAL-METHOD-T1-PROBE-001/)
 
 方法进入验证前，至少完成：
 

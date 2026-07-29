@@ -309,6 +309,8 @@ TRON官方接口文档提醒交易体和执行回执属于不同对象；本探�
 |状态|passed/failed/blocked/withdrawn|
 |限制|不得推导的结论|
 
+运行使用的候选案例、目标GT和真值状态必须先在[`首批样本与真值候选登记册`](./11-sample-and-ground-truth-register.md)登记；案例处于`candidate_design`或`truth_disputed`时不得形成通过结论。
+
 ## 7. 证据位置规则
 
 - 大体量原始区块、节点数据和日志不直接提交公共Git仓库；

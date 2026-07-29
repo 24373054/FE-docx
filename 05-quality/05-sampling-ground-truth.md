@@ -504,6 +504,8 @@ Git提交不是案件保管链，也不是可信时间戳。
 
 以上样本均未达到`approved_for_validation`。Bitcoin样本的`transaction_count`和`transaction_ids`存在来源冲突；Ethereum和TRON冗余不足。
 
+完整的三链六场景族90个候选案例见[`首批样本与真值候选登记册`](../10-reference/11-sample-and-ground-truth-register.md)。登记数量只表示设计覆盖，不表示样本已取得或测试已执行。
+
 ## 14. 生效前检查表
 
 - [ ] 项目发起人已批准本程序；
