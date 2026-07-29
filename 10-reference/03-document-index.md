@@ -129,12 +129,12 @@ classification: 内部受控
 |`10-reference/04-traceability-overview.md`|REF-004|需求、控制、测试与证据追踪说明|参考说明|测试负责人|50|`04e1c818c3a97010`|
 |`10-reference/05-production-readiness-checklist.md`|REF-005|生产、试点与申报就绪检查表|交付检查|质量负责人|103|`b4abce87ca8d1225`|
 |`10-reference/06-open-issues-and-assumptions.md`|REF-006|开放事项、假设与监管待确认清单|风险登记|项目接管负责人|89|`e5e921ce38207af4`|
-|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|172|`4fc859de2dbcae69`|
+|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|188|`455a6a8c26fa9e32`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|177|`8b6ea62e9d30d552`|
 |`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
 |`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|590|`c1c4cac18021cc33`|
 |`10-reference/11-sample-and-ground-truth-register.md`|REF-011|首批样本与真值候选登记册|参考登记|样本与真值负责人|236|`05cd2903b2174ea5`|
-|`10-reference/12-takeover-completion-and-consistency-audit.md`|REF-012|项目接管阶段完成与一致性审计报告|参考登记|项目接管负责人|401|`696ceb1cff95aa88`|
+|`10-reference/12-takeover-completion-and-consistency-audit.md`|REF-012|项目接管阶段完成与一致性审计报告|参考登记|项目接管负责人|437|`5de962ba8711c863`|
 
 ## 维护规则
 
