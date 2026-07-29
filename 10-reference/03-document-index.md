@@ -34,7 +34,7 @@ classification: 内部受控
 |`01-regulatory/07-data-security-privacy.md`|REG-007|数据安全、个人信息与保密控制|监管政策|安全负责人|385|`0ca7a1d0ab9cfa06`|
 |`01-regulatory/08-virtual-asset-boundaries.md`|REG-008|虚拟资产业务与宣传边界|监管政策|合规负责人|356|`cfa2d97fd5cd7642`|
 |`01-regulatory/09-regulatory-gap-register.md`|REG-009|监管差距与证据登记册管理|监管程序|合规负责人|351|`d43f548f7956f521`|
-|`01-regulatory/10-regulator-engagement.md`|REG-010|主管机关沟通与书面确认计划|监管程序|合规负责人|351|`e6f20c0849680db6`|
+|`01-regulatory/10-regulator-engagement.md`|REG-010|区块链电子数据能力主管机关书面咨询问题包|监管程序|合规负责人|382|`d453c1d73502e8c3`|
 |`01-regulatory/11-authority-verified-entry-baseline.md`|REG-011|区块链电子数据司法鉴定与技术服务准入研究基线|监管研究|合规研究负责人|514|`f0b0c0a0fc7a8ac7`|
 |`02-product/01-product-vision-scope.md`|PRD-001|产品愿景、范围与非目标|产品需求|产品负责人|350|`131425eb322e33e3`|
 |`02-product/02-personas-use-cases.md`|PRD-002|用户角色与用例|产品需求|产品负责人|340|`663cf554b5f30664`|
