@@ -13,7 +13,7 @@ classification: 内部受控
 
 # 受控文档索引
 
-本索引由脚本生成，共登记 **117** 份受控文档。SHA-256前16位用于发现非预期变化，不能替代完整制品签名。
+本索引由脚本生成，共登记 **118** 份受控文档。SHA-256前16位用于发现非预期变化，不能替代完整制品签名。
 
 |路径|文档ID|标题|类型|责任人|行数|SHA-256前16位|
 |---|---|---|---|---|---:|---|
@@ -25,7 +25,8 @@ classification: 内部受控
 |`00-governance/06-quality-objectives-kpis.md`|GOV-006|质量目标与KPI|治理政策|质量负责人|336|`43177c6374d82cbc`|
 |`00-governance/07-release-baseline-policy.md`|GOV-007|发布、基线与版本政策|治理政策|配置管理员|326|`ab2be74100c07924`|
 |`00-governance/08-takeover-maturity-and-remediation-baseline.md`|GOV-008|项目接管审计、文档成熟度与重构治理基线|治理政策|项目接管负责人|412|`3f833bded7690aa3`|
-|`00-governance/09-management-decision-pack.md`|GOV-009|区块链电子数据司法取证项目管理层决策包|治理政策|项目发起人|472|`3e7cb06f6235e90e`|
+|`00-governance/09-management-decision-pack.md`|GOV-009|区块链电子数据司法取证项目管理层决策包|治理政策|项目发起人|474|`43ce834746597a74`|
+|`00-governance/10-company-execution-authorization-pack.md`|GOV-010|公司人员任命、独立复核与外部行动执行授权包|治理政策|项目发起人|625|`aae7163121de5b69`|
 |`01-regulatory/01-regulatory-map.md`|REG-001|监管制度关系图|监管研究|合规负责人|345|`fb98fa86ea7163db`|
 |`01-regulatory/02-cma-one-list-one-library.md`|REG-002|CMA一单一库能力决策与申报准备|监管程序|合规负责人|371|`c28ddc3ad4f0016b`|
 |`01-regulatory/03-cnas-accreditation.md`|REG-003|CNAS司法鉴定认可准备|监管程序|质量负责人|377|`8a9a4e1c6077e816`|
@@ -128,7 +129,7 @@ classification: 内部受控
 |`10-reference/04-traceability-overview.md`|REF-004|需求、控制、测试与证据追踪说明|参考说明|测试负责人|50|`04e1c818c3a97010`|
 |`10-reference/05-production-readiness-checklist.md`|REF-005|生产、试点与申报就绪检查表|交付检查|质量负责人|103|`b4abce87ca8d1225`|
 |`10-reference/06-open-issues-and-assumptions.md`|REF-006|开放事项、假设与监管待确认清单|风险登记|项目接管负责人|89|`e5e921ce38207af4`|
-|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|156|`3285f845c371f1ce`|
+|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|172|`4fc859de2dbcae69`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|177|`8b6ea62e9d30d552`|
 |`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
 |`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|590|`c1c4cac18021cc33`|

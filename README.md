@@ -117,7 +117,8 @@
 ### 管理与审计
 
 1. [`管理层决策包`](00-governance/09-management-decision-pack.md)
-2. [`接管阶段完成与一致性审计报告`](10-reference/12-takeover-completion-and-consistency-audit.md)
+2. [`公司人员任命、独立复核与外部行动执行授权包`](00-governance/10-company-execution-authorization-pack.md)
+3. [`接管阶段完成与一致性审计报告`](10-reference/12-takeover-completion-and-consistency-audit.md)
 
 ### 方法、质量与运行
 
