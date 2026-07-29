@@ -83,10 +83,10 @@ classification: 内部受控
 |`05-quality/11-complaints-impartiality.md`|QMS-011|投诉、申诉、公正性与利益冲突程序|质量程序|质量负责人|388|`0688c89f4e063852`|
 |`05-quality/12-supplier-outsourcing.md`|QMS-012|供应商、外包与分包管理程序|质量程序|采购负责人|388|`ee04bdb5fc2fb88b`|
 |`06-operations/01-case-intake.md`|SOP-001|案件受理与技术问题定义SOP|运行程序|受理负责人|395|`476dfe7e96de6e9f`|
-|`06-operations/02-acquisition-session.md`|SOP-002|链上与在线数据采集会话SOP|运行程序|采集负责人|401|`a9bb7d72f1bacf78`|
-|`06-operations/03-analysis-review.md`|SOP-003|分析、假设与独立复核SOP|运行程序|分析负责人|401|`93baf2c3c2e50ea6`|
-|`06-operations/04-report-release.md`|SOP-004|报告编制、批准、交付与更正SOP|运行程序|报告负责人|427|`1276687c18b29f9d`|
-|`06-operations/05-evidence-storage-transfer.md`|SOP-005|证据存储、访问、移交与销毁SOP|运行程序|证据管理员|395|`b625fdf3cb8ce874`|
+|`06-operations/02-acquisition-session.md`|SOP-002|链上与在线数据采集会话SOP|运行程序|采集负责人|340|`65a665e244cfdbfd`|
+|`06-operations/03-analysis-review.md`|SOP-003|分析、假设与独立复核SOP|运行程序|分析负责人|399|`3a96f7e9970885e4`|
+|`06-operations/04-report-release.md`|SOP-004|报告编制、批准、交付与更正SOP|运行程序|报告负责人|363|`eb9d568b45618a05`|
+|`06-operations/05-evidence-storage-transfer.md`|SOP-005|证据存储、访问、移交与销毁SOP|运行程序|证据管理员|376|`a0e6df2dc799b4b3`|
 |`06-operations/06-node-operations.md`|SOP-006|区块链节点运行SOP|运行程序|节点负责人|401|`ba9d2e5b75bc73cd`|
 |`06-operations/07-change-release.md`|SOP-007|系统变更与发布运行SOP|运行程序|发布负责人|401|`af4ebfa5af5ca445`|
 |`06-operations/08-security-incident.md`|SOP-008|安全事件响应SOP|运行程序|安全负责人|401|`db9cee8d382dfda4`|
