@@ -1,7 +1,7 @@
 ---
 document_id: REF-004
 title: 需求、控制、测试与证据追踪说明
-version: 0.2.0
+version: 0.2.1
 status: 受控草案
 document_type: 参考说明
 owner: 测试负责人
@@ -17,7 +17,7 @@ classification: 内部受控
 
 |对象|数量|状态|
 |---|---:|---|
-|requirements.csv|1639|1151 reviewed；488 generated_unreviewed|
+|requirements.csv|1639|1639 reviewed；0 approved|
 |controls.csv|1639|1639 not_implemented|
 |tests.csv|1639|1639 not_executed|
 |traceability.csv|1639|1639条映射闭合|
@@ -170,5 +170,6 @@ git diff --check
 
 |版本|日期|变更|状态|
 |---|---|---|---|
+|0.2.1|2026-07-30|完成全库1639项需求内容评审；控制仍全部未实施、测试仍全部未执行，需求仍未获公司批准|受控草案，未签批|
 |0.2.0|2026-07-30|修复历史乱码，更新1639条追踪规模、生命周期、同步和证据解释|受控草案，未签批|
 |3.0.0-draft|2026-07-27|历史生成稿；曾错误声称全部approved|已由本版替代|
