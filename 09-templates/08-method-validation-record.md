@@ -1,7 +1,7 @@
 ---
 document_id: FRM-008
 title: 方法确认记录
-version: 0.2.0
+version: 0.3.0
 status: 模板草案（待实测）
 document_type: 受控模板
 owner: 方法负责人
@@ -218,3 +218,15 @@ classification: 内部受控
 即使技术运行`passed`，缺少代表性样本、独立人员、批准计划或限制关闭时，方法确认结论仍必须是`not_validated`。
 
 第一次演练见[`方法确认记录`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/method-validation.md)。一个正常样本跨实现复算通过，但方法未确认，结果为`partial_pass`。
+
+## 10. 第二次预期阻断场景补充
+
+第二次演练见[`方法记录`](../validation-evidence/public/SIM-FORM-BTC-CONFLICT-001-V1/records/method-validation.md)。判定扩展为三层：
+
+|判定层|示例|不得混淆为|
+|---|---|---|
+|源方法技术运行结果|`blocked`：P0冲突未关闭|工具崩溃或表单缺失|
+|预期停止控制结果|`passed`：按预定条件停止|方法已经通过|
+|方法确认结论|`not_validated`|单次控制有效即获批准|
+
+历史运行发生时的真值状态不得被后续真值准备结果回写。两次演练均无代表性样本集、具名独立复核和批准，本模板保持`模板草案（待实测）`。

@@ -1,7 +1,7 @@
 ---
 document_id: FRM-009
 title: 工具验证记录
-version: 0.2.0
+version: 0.3.0
 status: 模板草案（待实测）
 document_type: 受控模板
 owner: 工具负责人
@@ -220,3 +220,16 @@ classification: 内部受控
 |批准范围|明确输入、输出、链、方法、人员和禁止用途|
 
 第一次演练见[`工具验证记录`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/tool-validation.md)。PowerShell/.NET在单样本上结果正确，但无制品哈希、批准计划和负向测试，整体状态保持`blocked_not_validated`。
+
+## 10. 第二次在线服务冲突场景补充
+
+第二次演练见[`工具记录`](../validation-evidence/public/SIM-FORM-BTC-CONFLICT-001-V1/records/tool-validation.md)。验证对象必须分层：
+
+|对象类别|最低身份字段|
+|---|---|
+|`client_tool`|名称、版本、制品哈希、配置、构建或获取来源|
+|`runtime`|操作系统、运行时、依赖、签名或供应链状态|
+|`data_source`|运营方、端点、网络、观察时间、服务条款和批准状态|
+|`service_backend`|节点/客户端/版本可知性、同步状态、相互独立性；未知时显式记录|
+
+在线服务没有可取得的制品哈希时应填`not_applicable`或`not_available`及原因，不能留空或视为已验证。FRM-009仍缺公司角色和完整覆盖，本模板保持`模板草案（待实测）`。

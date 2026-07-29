@@ -1,7 +1,7 @@
 ---
 document_id: FRM-003
 title: 数据采集会话记录
-version: 0.2.0
+version: 0.3.0
 status: 模板草案（待实测）
 document_type: 受控模板
 owner: 采集负责人
@@ -229,4 +229,16 @@ classification: 内部受控
 - `captured`、`verified`、`sealed`和治理批准分别记录，不使用一个“已关闭”状态替代；
 - 不适用的TLS、页面、录像和同步字段必须给出理由。
 
-第一次演练见[`采集记录`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/acquisition.md)。演练中的错误复制被哈希拦截，证明单一“异常与重试”自由文本不足；本模板在第二次演练前仍为草案。
+第一次演练见[`采集记录`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/acquisition.md)。演练中的错误复制被哈希拦截，证明单一“异常与重试”自由文本不足。
+
+## 10. 第二次再摄取场景补充
+
+第二次演练见[`再摄取记录`](../validation-evidence/public/SIM-FORM-BTC-CONFLICT-001-V1/records/acquisition.md)。既有包再摄取时强制增加：
+
+- 父包ID、父包manifest SHA-256和父包root hash；
+- 父包对象完整性复核结果；
+- 本次是否产生新网络响应或新原始对象；
+- 本包是否包含父包副本以及离线恢复依赖；
+- 历史观察时间与本次再摄取时间分别记录。
+
+字段在第二场景中可填写，但没有公司设备编号、独立复核人和批准记录。本模板保持`模板草案（待实测）`。

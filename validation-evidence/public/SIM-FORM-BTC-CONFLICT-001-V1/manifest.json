@@ -1,0 +1,141 @@
+{
+  "schema_version": "3.0.0",
+  "package_id": "SIM-FORM-BTC-CONFLICT-001-V1",
+  "case_id": "PUBLIC-RND-SIM-BTC-CONFLICT-001",
+  "created_at": "2026-07-30T02:20:00+08:00",
+  "created_by": "Codex workspace research session",
+  "classification": "public",
+  "objects": [
+    {
+      "object_id": "OBJ-CONFLICT-CMP-001",
+      "object_type": "derived",
+      "path": "comparison/conflict-selection.csv",
+      "sha256": "a9ae7139295afd887d24138fc9a06e7cd567924f2f9b1d478c205af30574307d",
+      "size_bytes": 737,
+      "source_id": "VAL-METHOD-T1-PROBE-001",
+      "parent_ids": ["OBJ-CONFLICT-SOURCE-001"],
+      "tool_id": null,
+      "method_id": "VAL-METHOD-T1-PROBE",
+      "created_at": "2026-07-30T02:15:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-ENV-001",
+      "object_type": "record",
+      "path": "environment/environment.json",
+      "sha256": "f823a60295aaeb4e26a7f1438d4579d632e3cef0dff04782c1796c803eccc567",
+      "size_bytes": 874,
+      "source_id": "LOCAL-RUNTIME",
+      "tool_id": null,
+      "method_id": null,
+      "created_at": "2026-07-30T02:15:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-ACQ-001",
+      "object_type": "record",
+      "path": "records/acquisition.md",
+      "sha256": "7ff97d1927e5ddf7b6aa3efd80f90b710cd8b295ea3a642f1f83fdfb1b2a8531",
+      "size_bytes": 3041,
+      "source_id": "FRM-003-REHEARSAL",
+      "parent_ids": ["OBJ-CONFLICT-SOURCE-001", "OBJ-CONFLICT-ENV-001"],
+      "tool_id": null,
+      "method_id": null,
+      "created_at": "2026-07-30T02:15:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-AUTH-001",
+      "object_type": "record",
+      "path": "records/authorization.md",
+      "sha256": "68032eb45b4568ddc97b6ede4bc0dbd7f67add8eee6bab97e997abdbfdf03c47",
+      "size_bytes": 2472,
+      "source_id": "FRM-002-REHEARSAL",
+      "parent_ids": ["OBJ-CONFLICT-SCOPE-001"],
+      "tool_id": null,
+      "method_id": null,
+      "created_at": "2026-07-30T02:15:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-EREG-001",
+      "object_type": "record",
+      "path": "records/evidence-register.md",
+      "sha256": "e2027aa8dd890c577657bf1389e4707da058fc77a5a5c2ac6253725f7ee6474a",
+      "size_bytes": 2656,
+      "source_id": "FRM-004-REHEARSAL",
+      "parent_ids": ["OBJ-CONFLICT-SOURCE-001", "OBJ-CONFLICT-CMP-001"],
+      "tool_id": null,
+      "method_id": null,
+      "created_at": "2026-07-30T02:18:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-MVAL-001",
+      "object_type": "record",
+      "path": "records/method-validation.md",
+      "sha256": "bd44bca0496c412cfd794942eebc7f75fd835d7e3f313c1e2cb18709a0fc342d",
+      "size_bytes": 2041,
+      "source_id": "FRM-008-REHEARSAL",
+      "parent_ids": ["OBJ-CONFLICT-CMP-001"],
+      "tool_id": null,
+      "method_id": "VAL-METHOD-T1-PROBE",
+      "created_at": "2026-07-30T02:18:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-REV-001",
+      "object_type": "record",
+      "path": "records/review.md",
+      "sha256": "75be49a1fbcc0f20dff8f90d76d1bc577c44e574b2a2cb887bd45d331e552254",
+      "size_bytes": 1759,
+      "source_id": "FRM-010-REHEARSAL",
+      "parent_ids": ["OBJ-CONFLICT-AUTH-001", "OBJ-CONFLICT-MVAL-001", "OBJ-CONFLICT-TVAL-001"],
+      "tool_id": null,
+      "method_id": null,
+      "created_at": "2026-07-30T02:18:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-TRR-001",
+      "object_type": "record",
+      "path": "records/template-rehearsal-results.md",
+      "sha256": "a25a633ce02fb13cf75905343c96f3b2293210386bd9f742808e18f6536915a5",
+      "size_bytes": 1787,
+      "source_id": "TEMPLATE-REHEARSAL-SUMMARY",
+      "parent_ids": ["OBJ-CONFLICT-AUTH-001", "OBJ-CONFLICT-ACQ-001", "OBJ-CONFLICT-EREG-001", "OBJ-CONFLICT-MVAL-001", "OBJ-CONFLICT-TVAL-001", "OBJ-CONFLICT-REV-001"],
+      "tool_id": null,
+      "method_id": null,
+      "created_at": "2026-07-30T02:20:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-TVAL-001",
+      "object_type": "record",
+      "path": "records/tool-validation.md",
+      "sha256": "761c24375b4b31770b31c7c80775d5706b66bf1692db3c259a30f2f9a1db78bc",
+      "size_bytes": 2292,
+      "source_id": "FRM-009-REHEARSAL",
+      "parent_ids": ["OBJ-CONFLICT-SOURCE-001", "OBJ-CONFLICT-CMP-001"],
+      "tool_id": null,
+      "method_id": null,
+      "created_at": "2026-07-30T02:18:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-SCOPE-001",
+      "object_type": "record",
+      "path": "scope.md",
+      "sha256": "ab3da10ef6355dc251fc9ed20025de25855d71ce92e32760fe5fdd6a22b006ec",
+      "size_bytes": 2591,
+      "source_id": "SIMULATION-PLAN",
+      "tool_id": null,
+      "method_id": null,
+      "created_at": "2026-07-30T02:15:00+08:00"
+    },
+    {
+      "object_id": "OBJ-CONFLICT-SOURCE-001",
+      "object_type": "record",
+      "path": "source/source-package-reference.json",
+      "sha256": "87923109ce46e01ec565b43aef60f8725198440578815a6ad05732afc5abf298",
+      "size_bytes": 1539,
+      "source_id": "VAL-METHOD-T1-PROBE-001",
+      "tool_id": null,
+      "method_id": null,
+      "created_at": "2026-07-30T02:15:00+08:00"
+    }
+  ],
+  "root_hash": "da6acdc3ebe0a9a6bda6d5619ddd5ef27901f12d4985904d36baff18001ee13a",
+  "signatures": []
+}

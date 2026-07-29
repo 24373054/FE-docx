@@ -25,7 +25,7 @@ classification: 内部受控
 |`00-governance/06-quality-objectives-kpis.md`|GOV-006|质量目标与KPI|治理政策|质量负责人|336|`43177c6374d82cbc`|
 |`00-governance/07-release-baseline-policy.md`|GOV-007|发布、基线与版本政策|治理政策|配置管理员|326|`ab2be74100c07924`|
 |`00-governance/08-takeover-maturity-and-remediation-baseline.md`|GOV-008|项目接管审计、文档成熟度与重构治理基线|治理政策|项目接管负责人|412|`3f833bded7690aa3`|
-|`00-governance/09-management-decision-pack.md`|GOV-009|区块链电子数据司法取证项目管理层决策包|治理政策|项目发起人|469|`7c56b246a92041ba`|
+|`00-governance/09-management-decision-pack.md`|GOV-009|区块链电子数据司法取证项目管理层决策包|治理政策|项目发起人|470|`30f0159541dc19e9`|
 |`01-regulatory/01-regulatory-map.md`|REG-001|监管制度关系图|监管研究|合规负责人|345|`fb98fa86ea7163db`|
 |`01-regulatory/02-cma-one-list-one-library.md`|REG-002|CMA一单一库能力决策与申报准备|监管程序|合规负责人|371|`c28ddc3ad4f0016b`|
 |`01-regulatory/03-cnas-accreditation.md`|REG-003|CNAS司法鉴定认可准备|监管程序|质量负责人|377|`8a9a4e1c6077e816`|
@@ -108,15 +108,15 @@ classification: 内部受控
 |`08-planning/08-kpi-dashboard.md`|PLN-008|项目与质量看板设计|实施计划|项目经理|369|`24a934b920e2d3b5`|
 |`08-planning/09-validation-master-plan.md`|PLN-009|区块链电子数据首批方法验证总计划|实施计划|方法验证负责人|532|`5ba890ad3e95a463`|
 |`09-templates/01-case-intake-form.md`|FRM-001|案件受理与预审表|受控模板|记录责任人|216|`0fc4459ee1470bff`|
-|`09-templates/02-authorization-scope-form.md`|FRM-002|授权与范围确认表|受控模板|合规负责人|214|`94c9eb757c435ee3`|
-|`09-templates/03-acquisition-record.md`|FRM-003|数据采集会话记录|受控模板|采集负责人|232|`0ee6bd0cc79d0c50`|
-|`09-templates/04-evidence-item-register.md`|FRM-004|证据对象登记表|受控模板|证据管理员|230|`e8a22ba4d14e42ad`|
+|`09-templates/02-authorization-scope-form.md`|FRM-002|授权与范围确认表|受控模板|合规负责人|225|`e64efac114c58e1a`|
+|`09-templates/03-acquisition-record.md`|FRM-003|数据采集会话记录|受控模板|采集负责人|244|`7e42c55770ad5977`|
+|`09-templates/04-evidence-item-register.md`|FRM-004|证据对象登记表|受控模板|证据管理员|245|`5411955d43701ff8`|
 |`09-templates/05-tool-version-record.md`|FRM-005|工具与版本登记表|受控模板|记录责任人|210|`e6ad995c8f356bab`|
 |`09-templates/06-analysis-hypothesis-log.md`|FRM-006|分析假设与反例日志|受控模板|记录责任人|195|`f0f8da140e4956ff`|
 |`09-templates/07-label-source-assessment.md`|FRM-007|标签来源与实体归属评估表|受控模板|记录责任人|210|`154d6bcd2d2b0b84`|
-|`09-templates/08-method-validation-record.md`|FRM-008|方法确认记录|受控模板|方法负责人|220|`7bcb30ca4d7ae9d0`|
-|`09-templates/09-tool-validation-record.md`|FRM-009|工具验证记录|受控模板|工具负责人|222|`5cf9a8e7f61fe802`|
-|`09-templates/10-review-checklist.md`|FRM-010|技术与质量复核检查表|受控模板|质量负责人|216|`13be04be645c743c`|
+|`09-templates/08-method-validation-record.md`|FRM-008|方法确认记录|受控模板|方法负责人|232|`f2e9812edb97556b`|
+|`09-templates/09-tool-validation-record.md`|FRM-009|工具验证记录|受控模板|工具负责人|235|`7a8e53cc13ceb39d`|
+|`09-templates/10-review-checklist.md`|FRM-010|技术与质量复核检查表|受控模板|质量负责人|229|`e8f92780f734e1d6`|
 |`09-templates/11-report-template.md`|FRM-011|技术分析报告模板|受控模板|记录责任人|209|`a59ec4cbad3c0548`|
 |`09-templates/12-capa-form.md`|FRM-012|不符合与CAPA记录|受控模板|记录责任人|209|`dac1f4b0fa7481c0`|
 |`09-templates/13-change-request.md`|FRM-013|变更申请与影响分析表|受控模板|记录责任人|210|`7bea0d8a4781b7fb`|
@@ -128,10 +128,10 @@ classification: 内部受控
 |`10-reference/04-traceability-overview.md`|REF-004|需求、控制、测试与证据追踪说明|参考说明|测试负责人|50|`04e1c818c3a97010`|
 |`10-reference/05-production-readiness-checklist.md`|REF-005|生产、试点与申报就绪检查表|交付检查|质量负责人|103|`b4abce87ca8d1225`|
 |`10-reference/06-open-issues-and-assumptions.md`|REF-006|开放事项、假设与监管待确认清单|风险登记|项目接管负责人|89|`e5e921ce38207af4`|
-|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|118|`333a06274fcea586`|
+|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|138|`f71ac3f91f7024a4`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|177|`8b6ea62e9d30d552`|
 |`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
-|`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|495|`86d9a7fe008a9ed1`|
+|`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|547|`a01c94abac791575`|
 |`10-reference/11-sample-and-ground-truth-register.md`|REF-011|首批样本与真值候选登记册|参考登记|样本与真值负责人|236|`05cd2903b2174ea5`|
 |`10-reference/12-takeover-completion-and-consistency-audit.md`|REF-012|项目接管阶段完成与一致性审计报告|参考登记|项目接管负责人|401|`696ceb1cff95aa88`|
 

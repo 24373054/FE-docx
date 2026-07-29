@@ -1,7 +1,7 @@
 ---
 document_id: FRM-002
 title: 授权与范围确认表
-version: 0.2.0
+version: 0.3.0
 status: 模板草案（待实测）
 document_type: 受控模板
 owner: 合规负责人
@@ -211,4 +211,15 @@ classification: 内部受控
 |数据主体/控制方边界|公开数据也需说明来源控制方、访问条件和限制|
 |批准适用版本|关联具体采集计划、方法、包类型和接收范围|
 
-第一次演练记录见[`SIM-E2E-BTC-GENESIS-001-V1`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/authorization.md)。演练仅完成公开研究范围登记，没有具名自然人批准，结果为`partial_pass`。完成第二次不同场景演练前，本模板保持`模板草案（待实测）`。
+第一次演练记录见[`SIM-E2E-BTC-GENESIS-001-V1`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/authorization.md)。演练仅完成公开研究范围登记，没有具名自然人批准，结果为`partial_pass`。
+
+## 10. 第二次冲突场景演练
+
+第二次演练见[`授权记录`](../validation-evidence/public/SIM-FORM-BTC-CONFLICT-001-V1/records/authorization.md)。演练证明：
+
+- “仓库研究任务可执行”不等于“公司具名授权已取得”；
+- 授权核验状态必须与技术活动结果和发布决定分开；
+- 既有公开包再摄取必须明确本次没有新网络采集；
+- 新端点、新链、新采集、真实案件或对外用途必须重新授权。
+
+字段在第二场景中可填写，但两次记录均没有公司具名授权人和独立复核人。本模板保持`模板草案（待实测）`，等待角色分离演练。
