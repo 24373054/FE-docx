@@ -1,0 +1,26 @@
+{
+  "reference_id": "REF-GT-BTC-CORE-GENESIS-001",
+  "reused_from_package": "../VAL-METHOD-T1-PROBE-001",
+  "reused_object_id": "OBJ-T1P1-SOURCE-001",
+  "reused_object_path": "../VAL-METHOD-T1-PROBE-001/source/bitcoin-core-source-record.json",
+  "reused_object_sha256": "675bec03106240b50ea6c844b44a8b949983d7f6aa68bcb54a42a511018191b9",
+  "repository": "https://github.com/bitcoin/bitcoin",
+  "resolved_commit": "7e5952b0aa04429c88d8ad990f35862421c4fa9d",
+  "path": "src/kernel/chainparams.cpp",
+  "remote_body_sha256": "f50c52551ed26e077c058bacd7ed337729ab467e1ba6e98f945bc7815f30ce3e",
+  "asserted_block_hash": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+  "asserted_merkle_root": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+  "constructor_parameters": {
+    "timestamp": 1231006505,
+    "nonce": 2083236893,
+    "bits_hex": "1d00ffff",
+    "version": 1,
+    "reward_satoshi": 5000000000
+  },
+  "comment_transaction_count": 1,
+  "limitations": [
+    "本对象引用前一证据包而不是再次保存完整源码",
+    "官方常量比较不替代对原始区块的独立解析",
+    "尚未由具名第二人员复核"
+  ]
+}

@@ -19,3 +19,10 @@
 4. 对全部行拼接后的UTF-8字节计算SHA-256，得到`root_hash`。
 
 该算法只验证版本库内对象的一致性，不替代数字签名、可信时间戳、访问审计或司法保管链。
+
+## 当前公开包
+
+|包|性质|状态|明确不代表|
+|---|---|---|---|
+|[`VAL-METHOD-T1-PROBE-001`](./public/VAL-METHOD-T1-PROBE-001/)|公共端点探索与冲突记录|blocked|方法通过或数据源批准|
+|[`GT-BTC-GENESIS-001-V1`](./public/GT-BTC-GENESIS-001-V1/)|Bitcoin创世区块原始字节独立计算|truth_prepared|已批准真值或T1方法通过|

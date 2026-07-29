@@ -46,13 +46,13 @@ classification: 内部受控
 - 重试和重复响应不增加样本数量；
 - 每个案例进入验证前须补全固定对象、来源、字节数、哈希、GT对象和复核人；
 - `target_GT`只是目标，不表示已经达到该等级；
-- 当前只有`BTC-T1-N-001`与`BTC-T3-C-001`复用的创世区块对象形成公开探针包，两个案例状态均为`truth_disputed`。
+- 当前`BTC-T1-N-001`与`BTC-T3-C-001`复用的创世区块对象已形成原始字节GT2准备包，两个案例状态均为`truth_prepared`但未独立复核。
 
 ## 4. Bitcoin候选案例（30）
 
 |sample_id|任务|场景族|候选场景|target_GT|P0或关键判定|当前状态|进入验证前阻断项|
 |---|---|---|---|---|---|---|---|
-|BTC-T1-N-001|T1|正常|固定主网创世区块对象|GT2+GT3|区块哈希 高度 版本 时间 bits nonce Merkle根 交易数|truth_disputed|交易数来源冲突且无原始区块GT2|
+|BTC-T1-N-001|T1|正常|固定主网创世区块对象|GT2+GT3|区块哈希 高度 版本 时间 bits nonce Merkle根 交易数|truth_prepared|GT2机器计算完成 待第二人员复核和批准|
 |BTC-T1-N-002|T1|正常|早期非SegWit普通区块|GT2+GT3|头字段 交易数 原始字节|candidate_design|未选对象 未部署独立节点|
 |BTC-T2-N-003|T2|正常|P2PKH多输入多输出交易|GT1+GT2|输入输出 outpoint 金额 手续费|candidate_design|未选对象 未冻结计算规则|
 |BTC-T2-N-004|T2|正常|P2SH多签花费交易|GT1+GT2|脚本类型 输入输出 金额|candidate_design|未选对象 未定义脚本解释范围|
@@ -67,7 +67,7 @@ classification: 内部受控
 |BTC-T1-X-013|T1|负向|格式正确但不存在的对象ID|GT1+GT3|not_found不等于source_unavailable|candidate_design|需在自控节点证明不存在|
 |BTC-T1-X-014|T1|负向|在错误网络查询已知对象|GT1+GT3|network_mismatch或not_found|candidate_design|未部署主网与测试网隔离环境|
 |BTC-T1-X-015|T1|负向|剪枝节点请求不可得历史对象|GT1+GT3|source_incomplete不等于对象不存在|candidate_design|未部署剪枝和全量对照节点|
-|BTC-T3-C-001|T3|冲突|创世区块公共API交易数0与1冲突|GT2+GT3|source_conflict并停止|truth_disputed|公开包存在但GT2 第二节点和复核缺失|
+|BTC-T3-C-001|T3|冲突|创世区块公共API交易数0与1冲突|GT2+GT3|source_conflict并停止|truth_prepared|GT2已从原始字节得到1 待第二人员和第二客户端复核|
 |BTC-T3-C-002|T3|冲突|previousblockhash返回null与全零|GT2+GT4|归一化前保留原值|candidate_acquired|等价规则未批准|
 |BTC-T3-C-003|T3|冲突|confirmations或depth随观察时点变化|GT2+GT3|动态字段带观察时间且不作固定真值|candidate_design|未冻结观察窗口|
 |BTC-T3-C-004|T3|冲突|区块total与交易输出或手续费语义差异|GT2+GT4|字段定义和单位不混用|candidate_design|未完成供应商字段语义核验|
@@ -170,8 +170,8 @@ classification: 内部受控
 |---|---:|---|
 |candidate_design|81|只有场景设计|
 |candidate_acquired|7|已有探针观察但证据或真值不足|
-|truth_disputed|2|复用Bitcoin创世对象的正常与冲突案例均受交易数字段冲突影响|
-|truth_prepared|0|无|
+|truth_disputed|0|当前无；后续复核发现差异时恢复该状态|
+|truth_prepared|2|复用Bitcoin创世对象的正常与冲突案例已形成候选GT2|
 |approved_for_validation|0|无|
 
 `candidate_acquired`包括Bitcoin前序哈希表示、Ethereum区块0、TRON区块0及两项相应冲突/缺失观察；它们可能复用同一底层对象，不能在统计分析中视为独立样本。
@@ -202,15 +202,16 @@ classification: 内部受控
 |证据ID|关联案例|结论|
 |---|---|---|
 |VAL-METHOD-T1-PROBE-001|BTC-T1-N-001 BTC-T1-B-006 BTC-T3-C-001 BTC-T3-C-002|公开端点字段冲突和表示差异；运行blocked|
+|GT-BTC-GENESIS-001-V1|BTC-T1-N-001 BTC-T1-B-006 BTC-T3-C-001 BTC-T3-C-002|两个来源原始字节一致；独立计算得到交易数1；truth_prepared|
 |VAL-METHOD-T1-PROBE-001摘要中的Ethereum观察|EVM-T1-N-001 EVM-T3-C-001|一个端点成功 一个内部错误；未成独立包|
 |VAL-METHOD-T1-PROBE-001摘要中的TRON观察|TRON-T1-N-001 TRON-T1-B-006 TRON-T3-C-001|单一来源且字段缺失；未成独立包|
 
-公开Bitcoin证据包见[`validation-evidence/public/VAL-METHOD-T1-PROBE-001`](../validation-evidence/public/VAL-METHOD-T1-PROBE-001/)。
+公开Bitcoin探针包见[`VAL-METHOD-T1-PROBE-001`](../validation-evidence/public/VAL-METHOD-T1-PROBE-001/)，原始字节GT2准备包见[`GT-BTC-GENESIS-001-V1`](../validation-evidence/public/GT-BTC-GENESIS-001-V1/)。
 
 ## 10. 近期动作
 
-1. 先为Bitcoin创世对象保存原始区块序列化字节并建立GT2；
-2. 部署或取得两个实质独立的Bitcoin实现/路径；
+1. 指定第二人员从冻结原始字节独立复核Bitcoin GT2；
+2. 部署或取得第二个实质独立的Bitcoin客户端路径以准备GT3；
 3. 固定EVM两个不同客户端的区块0响应和原始对象；
 4. 固定java-tron自控节点与第二路径的创世对象；
 5. 从每条链先选择一个正常、一个负向、一个冲突案例完成真值演练；

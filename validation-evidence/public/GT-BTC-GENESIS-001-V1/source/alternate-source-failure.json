@@ -1,0 +1,13 @@
+{
+  "attempt_id": "CAP-GT-BTC-MEMPOOL-RAW-FAIL-001",
+  "request_method": "GET",
+  "request_url": "https://mempool.space/api/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f/raw",
+  "started_at": "2026-07-30T00:59:34.3305964+08:00",
+  "ended_at": "2026-07-30T00:59:41.7307210+08:00",
+  "result": "transport_error",
+  "error": "The SSL connection could not be established",
+  "root_error": "Received an unexpected EOF or 0 bytes from the transport stream",
+  "body_received": false,
+  "use_in_truth": "none",
+  "interpretation": "端点失败不表示区块或交易不存在"
+}

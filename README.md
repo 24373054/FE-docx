@@ -121,6 +121,7 @@
 2. [`验证证据与运行登记册`](10-reference/10-validation-evidence-register.md)
 3. [`首批样本与真值候选登记册`](10-reference/11-sample-and-ground-truth-register.md)
 4. [`首个被阻断的Bitcoin公开端点探针证据包`](validation-evidence/public/VAL-METHOD-T1-PROBE-001/)
+5. [`Bitcoin创世区块GT2真值准备包`](validation-evidence/public/GT-BTC-GENESIS-001-V1/)
 
 方法进入验证前，至少完成：
 

@@ -73,7 +73,7 @@ classification: 内部受控
 |`05-quality/02-document-record-control.md`|QMS-002|文件与记录控制程序|质量程序|质量负责人|388|`aaf30babac29bc71`|
 |`05-quality/03-method-validation.md`|QMS-003|方法确认与再确认程序|质量程序|方法负责人|444|`1265c7129c0f1f6c`|
 |`05-quality/04-tool-validation.md`|QMS-004|软件与取证工具验证程序|质量程序|测试负责人|534|`b8929f0d2b7d55e1`|
-|`05-quality/05-sampling-ground-truth.md`|QMS-005|样本、黄金数据与真实值管理|质量程序|测试负责人|531|`3f3c7d0a65d56e6d`|
+|`05-quality/05-sampling-ground-truth.md`|QMS-005|样本、黄金数据与真实值管理|质量程序|测试负责人|531|`68ce8d08a351d71b`|
 |`05-quality/06-proficiency-comparison.md`|QMS-006|能力验证与机构间比对程序|质量程序|质量负责人|368|`ee76f18f2003fd1a`|
 |`05-quality/07-equipment-metrology.md`|QMS-007|设备、校准与环境管理程序|质量程序|实验室负责人|393|`728bb50910134284`|
 |`05-quality/08-personnel-competence.md`|QMS-008|人员能力、培训与授权程序|质量程序|人员负责人|388|`a361c5d531997056`|
@@ -105,7 +105,7 @@ classification: 内部受控
 |`08-planning/06-risk-register.md`|PLN-006|项目风险登记与应急计划|实施计划|项目经理|369|`7718015e033be3e0`|
 |`08-planning/07-ip-standards.md`|PLN-007|知识产权与标准化计划|实施计划|知识产权负责人|364|`cdae0d8bcd1d32ec`|
 |`08-planning/08-kpi-dashboard.md`|PLN-008|项目与质量看板设计|实施计划|项目经理|369|`24a934b920e2d3b5`|
-|`08-planning/09-validation-master-plan.md`|PLN-009|区块链电子数据首批方法验证总计划|实施计划|方法验证负责人|532|`09d76c7a606eec94`|
+|`08-planning/09-validation-master-plan.md`|PLN-009|区块链电子数据首批方法验证总计划|实施计划|方法验证负责人|532|`5ba890ad3e95a463`|
 |`09-templates/01-case-intake-form.md`|FRM-001|案件受理与预审表|受控模板|记录责任人|216|`0fc4459ee1470bff`|
 |`09-templates/02-authorization-scope-form.md`|FRM-002|授权与范围确认表|受控模板|记录责任人|202|`d1932b0f546f4d40`|
 |`09-templates/03-acquisition-record.md`|FRM-003|数据采集会话记录|受控模板|记录责任人|216|`559228a42942bdce`|
@@ -126,12 +126,12 @@ classification: 内部受控
 |`10-reference/02-glossary.md`|REF-002|术语与缩略语|参考词典|质量负责人|46|`866ec6ee27cc77b6`|
 |`10-reference/04-traceability-overview.md`|REF-004|需求、控制、测试与证据追踪说明|参考说明|测试负责人|50|`04e1c818c3a97010`|
 |`10-reference/05-production-readiness-checklist.md`|REF-005|生产、试点与申报就绪检查表|交付检查|质量负责人|103|`b4abce87ca8d1225`|
-|`10-reference/06-open-issues-and-assumptions.md`|REF-006|开放事项、假设与监管待确认清单|风险登记|项目接管负责人|89|`f499b6993131fd2a`|
-|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|93|`7fa578fd48be4679`|
+|`10-reference/06-open-issues-and-assumptions.md`|REF-006|开放事项、假设与监管待确认清单|风险登记|项目接管负责人|89|`e5e921ce38207af4`|
+|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|93|`2296473f9bb0c8ad`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|177|`8b6ea62e9d30d552`|
 |`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
-|`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|354|`ea02b364b2b91e38`|
-|`10-reference/11-sample-and-ground-truth-register.md`|REF-011|首批样本与真值候选登记册|参考登记|样本与真值负责人|233|`2453126fc2d8b6e7`|
+|`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|438|`03e288a6bcc8ecec`|
+|`10-reference/11-sample-and-ground-truth-register.md`|REF-011|首批样本与真值候选登记册|参考登记|样本与真值负责人|234|`2d5276d6c5271fef`|
 
 ## 维护规则
 

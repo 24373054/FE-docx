@@ -498,11 +498,11 @@ Git提交不是案件保管链，也不是可信时间戳。
 
 |sample_id|对象|状态|GT|用途|证据|
 |---|---|---|---|---|---|
-|BTC-GENESIS-001|Bitcoin主网创世区块|candidate/disputed_field|GT5辅助；官方实现参考|公共端点冲突与停止门|[`VAL-METHOD-T1-PROBE-001`](../validation-evidence/public/VAL-METHOD-T1-PROBE-001/)|
+|BTC-GENESIS-001|Bitcoin主网创世区块|truth_prepared|GT2从285字节原始块独立重算；待第二人员复核|公共端点冲突、原始字段和停止门|[`GT-BTC-GENESIS-001-V1`](../validation-evidence/public/GT-BTC-GENESIS-001-V1/)|
 |ETH-GENESIS-001|Ethereum主网区块0|candidate|GT5单一成功来源|端点可用性探针|仅登记册摘要，未成包|
 |TRON-GENESIS-001|TRON主网区块0|candidate|GT5单一来源|对象结构探针|仅登记册摘要，未成包|
 
-以上样本均未达到`approved_for_validation`。Bitcoin样本的`transaction_count`和`transaction_ids`存在来源冲突；Ethereum和TRON冗余不足。
+以上样本均未达到`approved_for_validation`。Bitcoin的公共来源冲突已由原始字节计算形成候选GT2，但第二人员复核和批准仍未执行；Ethereum和TRON冗余不足。
 
 完整的三链六场景族90个候选案例见[`首批样本与真值候选登记册`](../10-reference/11-sample-and-ground-truth-register.md)。登记数量只表示设计覆盖，不表示样本已取得或测试已执行。
 
