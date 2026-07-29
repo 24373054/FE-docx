@@ -13,7 +13,7 @@ classification: 内部受控
 
 # 受控文档索引
 
-本索引由脚本生成，共登记 **112** 份受控文档。SHA-256前16位用于发现非预期变化，不能替代完整制品签名。
+本索引由脚本生成，共登记 **114** 份受控文档。SHA-256前16位用于发现非预期变化，不能替代完整制品签名。
 
 |路径|文档ID|标题|类型|责任人|行数|SHA-256前16位|
 |---|---|---|---|---|---:|---|
@@ -105,6 +105,7 @@ classification: 内部受控
 |`08-planning/06-risk-register.md`|PLN-006|项目风险登记与应急计划|实施计划|项目经理|369|`7718015e033be3e0`|
 |`08-planning/07-ip-standards.md`|PLN-007|知识产权与标准化计划|实施计划|知识产权负责人|364|`cdae0d8bcd1d32ec`|
 |`08-planning/08-kpi-dashboard.md`|PLN-008|项目与质量看板设计|实施计划|项目经理|369|`24a934b920e2d3b5`|
+|`08-planning/09-validation-master-plan.md`|PLN-009|区块链电子数据首批方法验证总计划|实施计划|方法验证负责人|530|`ead6747f56b9ab9b`|
 |`09-templates/01-case-intake-form.md`|FRM-001|案件受理与预审表|受控模板|记录责任人|216|`0fc4459ee1470bff`|
 |`09-templates/02-authorization-scope-form.md`|FRM-002|授权与范围确认表|受控模板|记录责任人|202|`d1932b0f546f4d40`|
 |`09-templates/03-acquisition-record.md`|FRM-003|数据采集会话记录|受控模板|记录责任人|216|`559228a42942bdce`|
@@ -129,6 +130,7 @@ classification: 内部受控
 |`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|72|`590c9438f574f20b`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|177|`8b6ea62e9d30d552`|
 |`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
+|`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|184|`ebd6344d13c3b0dc`|
 
 ## 维护规则
 
