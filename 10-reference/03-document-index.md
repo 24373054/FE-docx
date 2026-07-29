@@ -13,7 +13,7 @@ classification: 内部受控
 
 # 受控文档索引
 
-本索引由脚本生成，共登记 **115** 份受控文档。SHA-256前16位用于发现非预期变化，不能替代完整制品签名。
+本索引由脚本生成，共登记 **116** 份受控文档。SHA-256前16位用于发现非预期变化，不能替代完整制品签名。
 
 |路径|文档ID|标题|类型|责任人|行数|SHA-256前16位|
 |---|---|---|---|---|---:|---|
@@ -25,6 +25,7 @@ classification: 内部受控
 |`00-governance/06-quality-objectives-kpis.md`|GOV-006|质量目标与KPI|治理政策|质量负责人|336|`43177c6374d82cbc`|
 |`00-governance/07-release-baseline-policy.md`|GOV-007|发布、基线与版本政策|治理政策|配置管理员|326|`ab2be74100c07924`|
 |`00-governance/08-takeover-maturity-and-remediation-baseline.md`|GOV-008|项目接管审计、文档成熟度与重构治理基线|治理政策|项目接管负责人|412|`3f833bded7690aa3`|
+|`00-governance/09-management-decision-pack.md`|GOV-009|区块链电子数据司法取证项目管理层决策包|治理政策|项目发起人|463|`c1954b2269850429`|
 |`01-regulatory/01-regulatory-map.md`|REG-001|监管制度关系图|监管研究|合规负责人|345|`fb98fa86ea7163db`|
 |`01-regulatory/02-cma-one-list-one-library.md`|REG-002|CMA一单一库能力决策与申报准备|监管程序|合规负责人|371|`c28ddc3ad4f0016b`|
 |`01-regulatory/03-cnas-accreditation.md`|REG-003|CNAS司法鉴定认可准备|监管程序|质量负责人|377|`8a9a4e1c6077e816`|
