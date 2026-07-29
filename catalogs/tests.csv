@@ -977,66 +977,66 @@ TST-QMS002-017,QMS-002,留存期限,conflict,满足前置条件时输出可追�
 TST-QMS002-018,QMS-002,备份恢复,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
 TST-QMS002-019,QMS-002,合法暂停销毁,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
 TST-QMS002-020,QMS-002,销毁证明,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-001,QMS-003,方法分类,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-002,QMS-003,标准方法核验,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-003,QMS-003,非标准方法确认,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-004,QMS-003,偏离批准,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-005,QMS-003,性能特性,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-006,QMS-003,准确性,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-007,QMS-003,精密度,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-008,QMS-003,检出能力研究,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-009,QMS-003,稳健性,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-010,QMS-003,复现性,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-011,QMS-003,样本代表性,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-012,QMS-003,反例,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-013,QMS-003,接受准则,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-014,QMS-003,限制范围,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-015,QMS-003,确认报告,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-016,QMS-003,独立评审,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-017,QMS-003,人员培训,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-018,QMS-003,上线授权,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-019,QMS-003,质量监控,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS003-020,QMS-003,再确认触发,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-001,QMS-004,工具登记,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-002,QMS-004,预期用途,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-003,QMS-004,供应商声明,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-004,QMS-004,源码或二进制来源,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-005,QMS-004,版本与哈希,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-006,QMS-004,依赖锁定,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-007,QMS-004,环境配置,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-008,QMS-004,已知答案测试,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-009,QMS-004,边界测试,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-010,QMS-004,错误处理,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-011,QMS-004,安全测试,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-012,QMS-004,性能测试,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-013,QMS-004,跨工具比对,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-014,QMS-004,人工复核,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-015,QMS-004,缺陷登记,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-016,QMS-004,风险接受,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-017,QMS-004,发布批准,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-018,QMS-004,使用监控,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-019,QMS-004,升级再验证,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS004-020,QMS-004,停用与替换,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-001,QMS-005,样本来源,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-002,QMS-005,公开链样本,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-003,QMS-005,自建测试链,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-004,QMS-005,合作机构样本,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-005,QMS-005,合成样本,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-006,QMS-005,真实值证明,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-007,QMS-005,多工具一致,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-008,QMS-005,人工独立确认,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-009,QMS-005,盲测,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-010,QMS-005,正样本,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-011,QMS-005,负样本,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-012,QMS-005,边界样本,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-013,QMS-005,冲突样本,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-014,QMS-005,恶意样本,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-015,QMS-005,版本冻结,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-016,QMS-005,样本哈希,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-017,QMS-005,数据许可,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-018,QMS-005,隐私脱敏,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-019,QMS-005,样本污染,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-QMS005-020,QMS-005,样本退役,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
+TST-QMS003-001,QMS-003,方法分类,boundary,四类方法均可登记且缺少分类依据时状态保持concept,测试负责人,not_executed
+TST-QMS003-002,QMS-003,标准方法核验,conflict,引用版本与本地实现冲突时生成差异并阻断批准,测试负责人,not_executed
+TST-QMS003-003,QMS-003,非标准方法确认,negative,未冻结用途 样本或停止门时不得进入approved_for_validation,测试负责人,not_executed
+TST-QMS003-004,QMS-003,偏离批准,regression,P0参数偏离被登记并使原运行blocked且重跑使用新运行ID,测试负责人,not_executed
+TST-QMS003-005,QMS-003,性能特性,normal,每类输出均映射到适用指标 样本和通过门,测试负责人,not_executed
+TST-QMS003-006,QMS-003,准确性,boundary,任一P0字段与GT1至GT4不一致即阻断且不被平均准确率掩盖,测试负责人,not_executed
+TST-QMS003-007,QMS-003,精密度,normal,同人重复和跨人员复现均保存独立运行及一致性结果,测试负责人,not_executed
+TST-QMS003-008,QMS-003,检出能力研究,negative,缺少独立阳性或阴性定义时拒绝计算检出能力,测试负责人,not_executed
+TST-QMS003-009,QMS-003,稳健性,boundary,批准范围内环境变化均有记录且P0输出变化触发差异,测试负责人,not_executed
+TST-QMS003-010,QMS-003,复现性,normal,第二人员从原始对象复算P0而非复读输出文件,测试负责人,not_executed
+TST-QMS003-011,QMS-003,样本代表性,boundary,六类场景均有样本且单一供应商样本不被写成总体代表,测试负责人,not_executed
+TST-QMS003-012,QMS-003,反例,conflict,误认 遗漏 重复和错误归一化反例均产生预定义失败或拒绝,测试负责人,not_executed
+TST-QMS003-013,QMS-003,接受准则,negative,结果生成后修改阈值会使原运行无效并留下版本记录,测试负责人,not_executed
+TST-QMS003-014,QMS-003,限制范围,regression,确认报告逐项列出未验证链 协议 时期 字段和结论,测试负责人,not_executed
+TST-QMS003-015,QMS-003,确认报告,normal,报告完整包含通过 失败 阻断 偏离 缺陷和残余风险,测试负责人,not_executed
+TST-QMS003-016,QMS-003,独立评审,boundary,复核记录包含对象哈希验证 P0重算和抽样依据,测试负责人,not_executed
+TST-QMS003-017,QMS-003,人员培训,negative,只完成通用培训的人员不得获得指定方法授权,测试负责人,not_executed
+TST-QMS003-018,QMS-003,上线授权,negative,任一工具 人员 环境或数据源未授权时方法不得上线,测试负责人,not_executed
+TST-QMS003-019,QMS-003,质量监控,regression,P0差异 拒绝 来源失败 改判和投诉均能触发调查,测试负责人,not_executed
+TST-QMS003-020,QMS-003,再确认触发,boundary,协议 工具 数据源 环境或规则变化均产生影响评价记录,测试负责人,not_executed
+TST-QMS004-001,QMS-004,工具登记,boundary,缺少制品哈希 依赖或责任人的工具只能保持candidate,测试负责人,not_executed
+TST-QMS004-002,QMS-004,预期用途,negative,全链分析等无限用途被拒绝并要求限定对象 输出和环境,测试负责人,not_executed
+TST-QMS004-003,QMS-004,供应商声明,conflict,供应商声明与内部样本冲突时以未解释差异阻断使用,测试负责人,not_executed
+TST-QMS004-004,QMS-004,源码或二进制来源,negative,无法回溯官方或受控交付的二进制进入quarantined,测试负责人,not_executed
+TST-QMS004-005,QMS-004,版本与哈希,regression,同版本不同哈希被识别为不同制品并阻断复用旧批准,测试负责人,not_executed
+TST-QMS004-006,QMS-004,依赖锁定,boundary,依赖漂移被检测并触发变更影响评价,测试负责人,not_executed
+TST-QMS004-007,QMS-004,环境配置,conflict,时区 架构 节点或配置差异均进入环境记录和结果比较,测试负责人,not_executed
+TST-QMS004-008,QMS-004,已知答案测试,negative,由被测工具生成的预期被拒绝作为GT1至GT4,测试负责人,not_executed
+TST-QMS004-009,QMS-004,边界测试,boundary,空值 极值 畸形 升级和不支持对象均产生明确定义结果,测试负责人,not_executed
+TST-QMS004-010,QMS-004,错误处理,conflict,不存在 来源失败 冲突和内部错误不会被同一空值掩盖,测试负责人,not_executed
+TST-QMS004-011,QMS-004,安全测试,negative,秘密泄露 未授权外联或高危供应链问题使工具quarantined,测试负责人,not_executed
+TST-QMS004-012,QMS-004,性能测试,boundary,容量或超时导致的截断被明确报告且不得静默漏数,测试负责人,not_executed
+TST-QMS004-013,QMS-004,跨工具比对,conflict,来源结果不一致时生成差异而不按多数投票建立真值,测试负责人,not_executed
+TST-QMS004-014,QMS-004,人工复核,regression,复核人能从原始对象重算全部抽中P0字段,测试负责人,not_executed
+TST-QMS004-015,QMS-004,缺陷登记,normal,缺陷关联工具版本 样本 输入哈希 严重度 修复和历史影响,测试负责人,not_executed
+TST-QMS004-016,QMS-004,风险接受,negative,未解释P0错误不能被风险接受记录放行,测试负责人,not_executed
+TST-QMS004-017,QMS-004,发布批准,boundary,批准记录完整限定哈希 方法 人员 环境 有效期和禁止用途,测试负责人,not_executed
+TST-QMS004-018,QMS-004,使用监控,regression,错误 拒绝 切源 漂移 漏洞和公告均能关联责任人和处置,测试负责人,not_executed
+TST-QMS004-019,QMS-004,升级再验证,regression,新版本不会覆盖旧证据且按影响完成回归或阻断升级,测试负责人,not_executed
+TST-QMS004-020,QMS-004,停用与替换,normal,停用记录支持旧结果重现 迁移 回滚 替代和历史影响查询,测试负责人,not_executed
+TST-QMS005-001,QMS-005,样本来源,boundary,缺少来源主体 授权 取得路径或哈希的样本保持candidate,测试负责人,not_executed
+TST-QMS005-002,QMS-005,公开链样本,conflict,仅有网页截图而无网络 对象ID 时点和原始对象时不得冻结,测试负责人,not_executed
+TST-QMS005-003,QMS-005,自建测试链,regression,创世 配置 客户端和生成事件足以重建相同隔离网络,测试负责人,not_executed
+TST-QMS005-004,QMS-005,合作机构样本,negative,合同未覆盖研发 复核或保存时样本被阻断,测试负责人,not_executed
+TST-QMS005-005,QMS-005,合成样本,normal,固定生成器 种子和参数可重复得到同一输入与预期,测试负责人,not_executed
+TST-QMS005-006,QMS-005,真实值证明,boundary,每个P0字段均能定位GT1至GT4对象 规则和复核,测试负责人,not_executed
+TST-QMS005-007,QMS-005,多工具一致,conflict,共用同一API的工具不会被误认作独立GT3,测试负责人,not_executed
+TST-QMS005-008,QMS-005,人工独立确认,negative,只查看被测输出而未重算的复核不改变prepared状态,测试负责人,not_executed
+TST-QMS005-009,QMS-005,盲测,regression,答案提前泄露会使该运行无效并保留污染记录,测试负责人,not_executed
+TST-QMS005-010,QMS-005,正样本,normal,阳性样本具有独立定义和字段级证据,测试负责人,not_executed
+TST-QMS005-011,QMS-005,负样本,negative,来源失败 未知或不可得不会被记为阴性,测试负责人,not_executed
+TST-QMS005-012,QMS-005,边界样本,boundary,协议 数值 时间 编码 升级和容量边界均有候选样本,测试负责人,not_executed
+TST-QMS005-013,QMS-005,冲突样本,conflict,来源矛盾被原样保留并触发停止或批准的裁决流程,测试负责人,not_executed
+TST-QMS005-014,QMS-005,恶意样本,negative,畸形 伪装 重复 注入和资源消耗样本在隔离环境运行,测试负责人,not_executed
+TST-QMS005-015,QMS-005,版本冻结,regression,样本 原始 真值 规则 元数据和许可的新版本不覆盖旧版,测试负责人,not_executed
+TST-QMS005-016,QMS-005,样本哈希,boundary,原始 派生 真值和清单的字节数与SHA-256均可重新校验,测试负责人,not_executed
+TST-QMS005-017,QMS-005,数据许可,negative,许可到期 撤回或用途不覆盖时样本停止发布,测试负责人,not_executed
+TST-QMS005-018,QMS-005,隐私脱敏,boundary,脱敏样本通过最小化和重识别风险复核且不含资产秘密,测试负责人,not_executed
+TST-QMS005-019,QMS-005,样本污染,regression,同一对象族跨开发和验证集会被识别并重新分割,测试负责人,not_executed
+TST-QMS005-020,QMS-005,样本退役,normal,退役记录包含原因 替代 历史影响 保存或销毁证明,测试负责人,not_executed
 TST-QMS006-001,QMS-006,能力活动年度计划,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
 TST-QMS006-002,QMS-006,外部能力验证,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
 TST-QMS006-003,QMS-006,机构间比对,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed

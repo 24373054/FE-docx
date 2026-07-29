@@ -71,9 +71,9 @@ classification: 内部受控
 |`04-methods/12-ai-agent-governance.md`|M-AI-001|AI与Agent受控辅助方法|技术方法|AI负责人|409|`859c8de9ac914387`|
 |`05-quality/01-quality-manual.md`|QMS-001|质量手册|质量体系|质量负责人|458|`007c6e1b81156343`|
 |`05-quality/02-document-record-control.md`|QMS-002|文件与记录控制程序|质量程序|质量负责人|388|`aaf30babac29bc71`|
-|`05-quality/03-method-validation.md`|QMS-003|方法确认与再确认程序|质量程序|方法负责人|398|`c238c0f891bb3f72`|
-|`05-quality/04-tool-validation.md`|QMS-004|软件与取证工具验证程序|质量程序|测试负责人|403|`809468531c1e6409`|
-|`05-quality/05-sampling-ground-truth.md`|QMS-005|样本、黄金数据与真实值管理|质量程序|测试负责人|388|`450871d43dda54a6`|
+|`05-quality/03-method-validation.md`|QMS-003|方法确认与再确认程序|质量程序|方法负责人|444|`1265c7129c0f1f6c`|
+|`05-quality/04-tool-validation.md`|QMS-004|软件与取证工具验证程序|质量程序|测试负责人|534|`b8929f0d2b7d55e1`|
+|`05-quality/05-sampling-ground-truth.md`|QMS-005|样本、黄金数据与真实值管理|质量程序|测试负责人|529|`41ea113b78431a2f`|
 |`05-quality/06-proficiency-comparison.md`|QMS-006|能力验证与机构间比对程序|质量程序|质量负责人|368|`ee76f18f2003fd1a`|
 |`05-quality/07-equipment-metrology.md`|QMS-007|设备、校准与环境管理程序|质量程序|实验室负责人|393|`728bb50910134284`|
 |`05-quality/08-personnel-competence.md`|QMS-008|人员能力、培训与授权程序|质量程序|人员负责人|388|`a361c5d531997056`|
