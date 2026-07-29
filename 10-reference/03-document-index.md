@@ -25,8 +25,8 @@ classification: 内部受控
 |`00-governance/06-quality-objectives-kpis.md`|GOV-006|质量目标与KPI|治理政策|质量负责人|336|`43177c6374d82cbc`|
 |`00-governance/07-release-baseline-policy.md`|GOV-007|发布、基线与版本政策|治理政策|配置管理员|326|`ab2be74100c07924`|
 |`00-governance/08-takeover-maturity-and-remediation-baseline.md`|GOV-008|项目接管审计、文档成熟度与重构治理基线|治理政策|项目接管负责人|412|`3f833bded7690aa3`|
-|`00-governance/09-management-decision-pack.md`|GOV-009|区块链电子数据司法取证项目管理层决策包|治理政策|项目发起人|478|`7f53c5aa357fae01`|
-|`00-governance/10-company-execution-authorization-pack.md`|GOV-010|公司人员任命、独立复核与外部行动执行授权包|治理政策|项目发起人|627|`aeef2d3d448dcace`|
+|`00-governance/09-management-decision-pack.md`|GOV-009|区块链电子数据司法取证项目管理层决策包|治理政策|项目发起人|480|`557ec65d7549cc5c`|
+|`00-governance/10-company-execution-authorization-pack.md`|GOV-010|公司人员任命、独立复核与外部行动执行授权包|治理政策|项目发起人|628|`f39f75d02b24158b`|
 |`01-regulatory/01-regulatory-map.md`|REG-001|监管制度关系图|监管研究|合规负责人|345|`fb98fa86ea7163db`|
 |`01-regulatory/02-cma-one-list-one-library.md`|REG-002|CMA一单一库能力决策与申报准备|监管程序|合规负责人|371|`c28ddc3ad4f0016b`|
 |`01-regulatory/03-cnas-accreditation.md`|REG-003|CNAS司法鉴定认可准备|监管程序|质量负责人|377|`8a9a4e1c6077e816`|
@@ -76,13 +76,13 @@ classification: 内部受控
 |`05-quality/03-method-validation.md`|QMS-003|方法确认与再确认程序|质量程序|方法负责人|444|`1265c7129c0f1f6c`|
 |`05-quality/04-tool-validation.md`|QMS-004|软件与取证工具验证程序|质量程序|测试负责人|534|`b8929f0d2b7d55e1`|
 |`05-quality/05-sampling-ground-truth.md`|QMS-005|样本、黄金数据与真实值管理|质量程序|测试负责人|531|`68ce8d08a351d71b`|
-|`05-quality/06-proficiency-comparison.md`|QMS-006|能力验证与机构间比对程序|质量程序|质量负责人|368|`ee76f18f2003fd1a`|
-|`05-quality/07-equipment-metrology.md`|QMS-007|设备、校准与环境管理程序|质量程序|实验室负责人|393|`728bb50910134284`|
+|`05-quality/06-proficiency-comparison.md`|QMS-006|能力验证与机构间比对程序|质量程序|质量负责人|226|`e10b52b0987b80a5`|
+|`05-quality/07-equipment-metrology.md`|QMS-007|设备、计量与环境管理程序|质量程序|实验室负责人|218|`55b65e375fd6a7be`|
 |`05-quality/08-personnel-competence.md`|QMS-008|人员能力、培训与授权质量控制程序|质量程序|人员负责人|329|`2c8bef8d95ef2fbd`|
 |`05-quality/09-nonconforming-capa.md`|QMS-009|不符合工作与CAPA程序|质量程序|质量负责人|306|`a52eb13aa7999d2c`|
 |`05-quality/10-internal-audit-review.md`|QMS-010|内部审核与管理评审程序|质量程序|质量负责人|347|`55a549bb6ba28516`|
-|`05-quality/11-complaints-impartiality.md`|QMS-011|投诉、申诉、公正性与利益冲突程序|质量程序|质量负责人|388|`0688c89f4e063852`|
-|`05-quality/12-supplier-outsourcing.md`|QMS-012|供应商、外包与分包管理程序|质量程序|采购负责人|388|`ee04bdb5fc2fb88b`|
+|`05-quality/11-complaints-impartiality.md`|QMS-011|投诉、申诉、公正性与利益冲突程序|质量程序|质量负责人|211|`f28f03dc3af028ea`|
+|`05-quality/12-supplier-outsourcing.md`|QMS-012|供应商、外包与分包管理程序|质量程序|采购负责人|223|`8c387b61889175da`|
 |`06-operations/01-case-intake.md`|SOP-001|案件受理与技术问题定义SOP|运行程序|受理负责人|395|`476dfe7e96de6e9f`|
 |`06-operations/02-acquisition-session.md`|SOP-002|链上与在线数据采集会话SOP|运行程序|采集负责人|340|`65a665e244cfdbfd`|
 |`06-operations/03-analysis-review.md`|SOP-003|分析、假设与独立复核SOP|运行程序|分析负责人|399|`3a96f7e9970885e4`|
@@ -129,7 +129,7 @@ classification: 内部受控
 |`10-reference/04-traceability-overview.md`|REF-004|需求、控制、测试与证据追踪说明|参考说明|测试负责人|50|`04e1c818c3a97010`|
 |`10-reference/05-production-readiness-checklist.md`|REF-005|生产、试点与申报就绪检查表|交付检查|质量负责人|103|`b4abce87ca8d1225`|
 |`10-reference/06-open-issues-and-assumptions.md`|REF-006|开放事项、假设与监管待确认清单|风险登记|项目接管负责人|89|`e5e921ce38207af4`|
-|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|259|`c0d9bcaf3c2ff5c8`|
+|`10-reference/07-release-notes.md`|REF-007|发布与基线处置记录|发布记录|项目接管负责人|275|`04f3088dea172f80`|
 |`10-reference/08-authority-evidence-register.md`|REF-008|监管权威证据登记册|参考登记|合规研究负责人|177|`8b6ea62e9d30d552`|
 |`10-reference/09-market-and-competition-evidence-register.md`|REF-009|市场与竞争证据登记册|参考登记|产品研究负责人|191|`664629d7d3a5e2d4`|
 |`10-reference/10-validation-evidence-register.md`|REF-010|验证证据与运行登记册|参考登记|质量负责人|590|`c1c4cac18021cc33`|
