@@ -1,12 +1,12 @@
 ---
 document_id: REF-002
 title: 术语与缩略语
-version: 3.0.0
-status: 受控基线
+version: 3.0.0-draft
+status: 历史生成稿（待重构）
 document_type: 参考词典
 owner: 质量负责人
-approver: 项目负责人
-effective_date: 2026-07-27
+approver: 待指定（未签批）
+effective_date: 尚未生效
 review_cycle: 每6个月或术语变化时
 classification: 内部受控
 ---

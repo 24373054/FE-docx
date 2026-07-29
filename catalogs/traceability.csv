@@ -1630,3 +1630,11 @@ REQ-PLN008-015,PLN-008-C015,TST-PLN008-015,FRM-013,08-planning/08-kpi-dashboard.
 REQ-PLN008-016,PLN-008-C016,TST-PLN008-016,FRM-013,08-planning/08-kpi-dashboard.md
 REQ-PLN008-017,PLN-008-C017,TST-PLN008-017,FRM-013,08-planning/08-kpi-dashboard.md
 REQ-PLN008-018,PLN-008-C018,TST-PLN008-018,FRM-013,08-planning/08-kpi-dashboard.md
+REQ-GOV008-001,GOV-008-C001,TST-GOV008-001,FRM-013,00-governance/08-takeover-maturity-and-remediation-baseline.md
+REQ-GOV008-002,GOV-008-C002,TST-GOV008-002,FRM-010,00-governance/08-takeover-maturity-and-remediation-baseline.md
+REQ-GOV008-003,GOV-008-C003,TST-GOV008-003,FRM-010,00-governance/08-takeover-maturity-and-remediation-baseline.md
+REQ-GOV008-004,GOV-008-C004,TST-GOV008-004,FRM-010,00-governance/08-takeover-maturity-and-remediation-baseline.md
+REQ-GOV008-005,GOV-008-C005,TST-GOV008-005,FRM-013,00-governance/08-takeover-maturity-and-remediation-baseline.md
+REQ-GOV008-006,GOV-008-C006,TST-GOV008-006,FRM-010,00-governance/08-takeover-maturity-and-remediation-baseline.md
+REQ-GOV008-007,GOV-008-C007,TST-GOV008-007,FRM-013,00-governance/08-takeover-maturity-and-remediation-baseline.md
+REQ-GOV008-008,GOV-008-C008,TST-GOV008-008,FRM-010,00-governance/08-takeover-maturity-and-remediation-baseline.md

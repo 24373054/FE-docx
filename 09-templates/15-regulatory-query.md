@@ -1,12 +1,12 @@
 ---
 document_id: FRM-015
 title: 主管机关问题与答复登记表
-version: 3.0.0
-status: 受控模板
+version: 3.0.0-draft
+status: 模板草案（待实测）
 document_type: 受控模板
 owner: 记录责任人
-approver: 质量负责人
-effective_date: 2026-07-27
+approver: 待指定（未签批）
+effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
 ---

@@ -1,12 +1,12 @@
 ---
 document_id: REF-001
 title: 官方来源登记册
-version: 3.0.0
-status: 受控基线
+version: 3.0.0-draft
+status: 历史生成稿（待重构）
 document_type: 参考登记
 owner: 合规负责人
-approver: 质量负责人
-effective_date: 2026-07-27
+approver: 待指定（未签批）
+effective_date: 尚未生效
 review_cycle: 每季度；正式申报、签约或重大发布前
 classification: 内部受控
 ---

@@ -31,9 +31,9 @@ def render():
         rows.append((p.relative_to(ROOT).as_posix(), meta(text,"document_id"), meta(text,"title"),
                      meta(text,"document_type"), meta(text,"owner"), len(text.splitlines()),
                      hashlib.sha256(text.encode()).hexdigest()[:16]))
-    lines=["---","document_id: REF-003","title: 受控文档索引","version: 3.0.0","status: 受控基线",
-           "document_type: 参考索引","owner: 配置管理员","approver: 质量负责人",
-           "effective_date: 2026-07-27","review_cycle: 每次合并自动更新","classification: 内部受控",
+    lines=["---","document_id: REF-003","title: 受控文档索引","version: 0.2.0","status: 自动生成索引",
+           "document_type: 参考索引","owner: 配置管理员","approver: 不适用（自动生成）",
+           "effective_date: 随合并更新","review_cycle: 每次合并自动更新","classification: 内部受控",
            "---","","# 受控文档索引","",
            f"本索引由脚本生成，共登记 **{len(rows)}** 份受控文档。SHA-256前16位用于发现非预期变化，不能替代完整制品签名。","",
            "|路径|文档ID|标题|类型|责任人|行数|SHA-256前16位|","|---|---|---|---|---|---:|---|"]

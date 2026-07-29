@@ -1,12 +1,12 @@
 ---
 document_id: REF-004
 title: 需求、控制、测试与证据追踪说明
-version: 3.0.0
-status: 受控基线
+version: 3.0.0-draft
+status: 历史生成稿（待重构）
 document_type: 参考说明
 owner: 测试负责人
-approver: 质量负责人
-effective_date: 2026-07-27
+approver: 待指定（未签批）
+effective_date: 尚未生效
 review_cycle: 每次需求、控制或测试变化时
 classification: 内部受控
 ---
