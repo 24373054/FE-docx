@@ -683,29 +683,29 @@ TST-MTH001-018,MTH-001,结论分层,negative,满足前置条件时输出可追�
 TST-MTH001-019,MTH-001,拒绝结论,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
 TST-MTH001-020,MTH-001,再确认触发,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
 TST-MTH001-021,MTH-001,历史案件影响,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-001,M-BTC-001,网络与链身份,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-002,M-BTC-001,节点版本,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-003,M-BTC-001,区块头,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-004,M-BTC-001,区块哈希,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-005,M-BTC-001,前序区块,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-006,M-BTC-001,Merkle根,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-007,M-BTC-001,交易原始字节,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-008,M-BTC-001,txid与wtxid,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-009,M-BTC-001,输入引用,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-010,M-BTC-001,输出索引,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-011,M-BTC-001,脚本类型,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-012,M-BTC-001,金额单位,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-013,M-BTC-001,coinbase,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-014,M-BTC-001,手续费,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-015,M-BTC-001,UTXO状态,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-016,M-BTC-001,确认数,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-017,M-BTC-001,链重组,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-018,M-BTC-001,RBF,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-019,M-BTC-001,找零候选,regression,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-020,M-BTC-001,多输入启发式,normal,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-021,M-BTC-001,CoinJoin识别,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-022,M-BTC-001,路径分配模型,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
-TST-MBTC001-023,M-BTC-001,拒绝主体归属,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
+TST-MBTC001-001,M-BTC-001,网络与链身份,boundary,错误网络或创世哈希不一致时运行blocked且不查询模糊候选,测试负责人,not_executed
+TST-MBTC001-002,M-BTC-001,节点版本,conflict,客户端 构建 配置 同步或索引不明时不得形成P0结论,测试负责人,not_executed
+TST-MBTC001-003,M-BTC-001,区块头,normal,从80字节原始头准确解析六个字段且保留端序,测试负责人,not_executed
+TST-MBTC001-004,M-BTC-001,区块哈希,regression,双SHA-256内部摘要和反转显示哈希均与GT一致,测试负责人,not_executed
+TST-MBTC001-005,M-BTC-001,前序区块,boundary,创世全零原始字节与null显示差异被保留且不误判,测试负责人,not_executed
+TST-MBTC001-006,M-BTC-001,Merkle根,boundary,单交易样本Merkle根等于txid且多交易范围未验证时明确拒绝,测试负责人,not_executed
+TST-MBTC001-007,M-BTC-001,交易原始字节,conflict,交易边界 字节数 哈希和尾随检查均可复核,测试负责人,not_executed
+TST-MBTC001-008,M-BTC-001,txid与wtxid,boundary,legacy和SegWit样本分别得到正确txid与wtxid且不混用,测试负责人,not_executed
+TST-MBTC001-009,M-BTC-001,输入引用,normal,每个输入的previous txid vout script sequence witness均保持顺序,测试负责人,not_executed
+TST-MBTC001-010,M-BTC-001,输出索引,normal,输出零基索引 原始顺序 金额和script可回到字节区间,测试负责人,not_executed
+TST-MBTC001-011,M-BTC-001,脚本类型,boundary,未知或未批准脚本返回候选或unsupported且原始script保留,测试负责人,not_executed
+TST-MBTC001-012,M-BTC-001,金额单位,conflict,全部金额使用整数satoshi且显示换算不产生精度损失,测试负责人,not_executed
+TST-MBTC001-013,M-BTC-001,coinbase,negative,coinbase按结构识别且不会尝试查找普通输入原值,测试负责人,not_executed
+TST-MBTC001-014,M-BTC-001,手续费,negative,缺任一输入原值时手续费为unknown且coinbase为not_applicable,测试负责人,not_executed
+TST-MBTC001-015,M-BTC-001,UTXO状态,normal,spent或unspent结论包含观察时点 链尖 节点和索引状态,测试负责人,not_executed
+TST-MBTC001-016,M-BTC-001,确认数,boundary,确认数随链尖变化但历史观察记录不被覆盖,测试负责人,not_executed
+TST-MBTC001-017,M-BTC-001,链重组,conflict,对象离开最佳链时保留前后状态并阻断永久确认表述,测试负责人,not_executed
+TST-MBTC001-018,M-BTC-001,RBF,negative,RBF信号只输出观察事实且不推断一定替代或交易目的,测试负责人,not_executed
+TST-MBTC001-019,M-BTC-001,找零候选,negative,当前方法对找零问题明确拒绝而不输出候选地址,测试负责人,not_executed
+TST-MBTC001-020,M-BTC-001,多输入启发式,negative,多输入交易不会生成共同控制或主体聚类结论,测试负责人,not_executed
+TST-MBTC001-021,M-BTC-001,CoinJoin识别,negative,类似CoinJoin结构不会被当前方法写成确定识别,测试负责人,not_executed
+TST-MBTC001-022,M-BTC-001,路径分配模型,negative,未批准分配模型时不得输出唯一资金流金额或路径,测试负责人,not_executed
+TST-MBTC001-023,M-BTC-001,拒绝主体归属,negative,只有链上地址且无批准链下证据时输出无法判断主体归属,测试负责人,not_executed
 TST-MEVM001-001,M-EVM-001,Chain ID,boundary,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
 TST-MEVM001-002,M-EVM-001,创世区块,conflict,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed
 TST-MEVM001-003,M-EVM-001,客户端版本,negative,满足前置条件时输出可追溯结果；前置条件失败时产生明确阻断或拒绝结论,测试负责人,not_executed

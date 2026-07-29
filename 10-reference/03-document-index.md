@@ -58,7 +58,7 @@ classification: 内部受控
 |`03-architecture/09-backup-disaster-recovery.md`|ARC-009|备份、灾备与业务连续性架构|架构标准|平台负责人|390|`beea00392961bf6d`|
 |`03-architecture/10-api-integration-contracts.md`|ARC-010|API与外部集成契约|架构标准|架构负责人|390|`451aa9a68dce7190`|
 |`04-methods/01-general-method-framework.md`|MTH-001|通用方法确认与结论分层框架|技术方法|方法负责人|414|`8b62a53c0b1ea559`|
-|`04-methods/02-bitcoin-utxo-acquisition-tracing.md`|M-BTC-001|Bitcoin UTXO采集与资金追踪方法|技术方法|Bitcoin方法负责人|435|`7ec7a6b96088ab75`|
+|`04-methods/02-bitcoin-utxo-acquisition-tracing.md`|M-BTC-001|Bitcoin对象提取与UTXO确定性事实重建方法|技术方法|Bitcoin方法负责人|614|`a328269f32ddbff8`|
 |`04-methods/03-evm-acquisition-execution.md`|M-EVM-001|EVM链采集、执行重建与资产变化方法|技术方法|EVM方法负责人|460|`ca5e032a4424dfca`|
 |`04-methods/04-tron-acquisition-analysis.md`|M-TRON-001|TRON采集、执行与TRC-20分析方法|技术方法|TRON方法负责人|439|`5e455f287306714f`|
 |`04-methods/05-cross-chain-bridge-correlation.md`|M-XCHAIN-001|跨链桥交易关联方法|技术方法|跨链方法负责人|454|`64accc1f47e761da`|

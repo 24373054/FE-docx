@@ -683,29 +683,29 @@ REQ-MTH001-018,MTH-001,结论分层,围绕“结论分层”，通用方法确�
 REQ-MTH001-019,MTH-001,拒绝结论,“拒绝结论”应被拆分为可验证步骤；每一步都要指定责任角色、前置条件、执行记录、异常分支和完成定义。,P2,方法负责人,generated_unreviewed
 REQ-MTH001-020,MTH-001,再确认触发,对“再确认触发”的判断不得仅依赖界面展示或供应商结论，关键事实应能够回溯至原始对象、协议字段或受控记录。,P2,方法负责人,generated_unreviewed
 REQ-MTH001-021,MTH-001,历史案件影响,实施“历史案件影响”时应优先保证可重现性和证据完整性，而不是追求最大覆盖率；无法满足前提时输出拒绝结论。,P2,方法负责人,generated_unreviewed
-REQ-MBTC001-001,M-BTC-001,网络与链身份,“网络与链身份”应被拆分为可验证步骤；每一步都要指定责任角色、前置条件、执行记录、异常分支和完成定义。,P0,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-002,M-BTC-001,节点版本,对“节点版本”的判断不得仅依赖界面展示或供应商结论，关键事实应能够回溯至原始对象、协议字段或受控记录。,P0,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-003,M-BTC-001,区块头,实施“区块头”时应优先保证可重现性和证据完整性，而不是追求最大覆盖率；无法满足前提时输出拒绝结论。,P0,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-004,M-BTC-001,区块哈希,“区块哈希”发生变更后，应重新执行影响分析、回归验证和人员授权确认，历史案件是否受影响必须形成书面结论。,P0,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-005,M-BTC-001,前序区块,“前序区块”的验收必须包含正常、边界、冲突、恶意和历史回归样本，并由未参与实现的人员独立复核。,P0,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-006,M-BTC-001,Merkle根,围绕“Merkle根”，Bitcoin UTXO采集与资金追踪方法必须保留输入来源、处理规则、输出结果和复核证据，任何不可解释的缺口均不得由默认值掩盖。,P1,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-007,M-BTC-001,交易原始字节,“交易原始字节”应被拆分为可验证步骤；每一步都要指定责任角色、前置条件、执行记录、异常分支和完成定义。,P1,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-008,M-BTC-001,txid与wtxid,对“txid与wtxid”的判断不得仅依赖界面展示或供应商结论，关键事实应能够回溯至原始对象、协议字段或受控记录。,P1,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-009,M-BTC-001,输入引用,实施“输入引用”时应优先保证可重现性和证据完整性，而不是追求最大覆盖率；无法满足前提时输出拒绝结论。,P1,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-010,M-BTC-001,输出索引,“输出索引”发生变更后，应重新执行影响分析、回归验证和人员授权确认，历史案件是否受影响必须形成书面结论。,P1,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-011,M-BTC-001,脚本类型,“脚本类型”的验收必须包含正常、边界、冲突、恶意和历史回归样本，并由未参与实现的人员独立复核。,P1,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-012,M-BTC-001,金额单位,围绕“金额单位”，Bitcoin UTXO采集与资金追踪方法必须保留输入来源、处理规则、输出结果和复核证据，任何不可解释的缺口均不得由默认值掩盖。,P1,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-013,M-BTC-001,coinbase,“coinbase”应被拆分为可验证步骤；每一步都要指定责任角色、前置条件、执行记录、异常分支和完成定义。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-014,M-BTC-001,手续费,对“手续费”的判断不得仅依赖界面展示或供应商结论，关键事实应能够回溯至原始对象、协议字段或受控记录。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-015,M-BTC-001,UTXO状态,实施“UTXO状态”时应优先保证可重现性和证据完整性，而不是追求最大覆盖率；无法满足前提时输出拒绝结论。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-016,M-BTC-001,确认数,“确认数”发生变更后，应重新执行影响分析、回归验证和人员授权确认，历史案件是否受影响必须形成书面结论。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-017,M-BTC-001,链重组,“链重组”的验收必须包含正常、边界、冲突、恶意和历史回归样本，并由未参与实现的人员独立复核。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-018,M-BTC-001,RBF,围绕“RBF”，Bitcoin UTXO采集与资金追踪方法必须保留输入来源、处理规则、输出结果和复核证据，任何不可解释的缺口均不得由默认值掩盖。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-019,M-BTC-001,找零候选,“找零候选”应被拆分为可验证步骤；每一步都要指定责任角色、前置条件、执行记录、异常分支和完成定义。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-020,M-BTC-001,多输入启发式,对“多输入启发式”的判断不得仅依赖界面展示或供应商结论，关键事实应能够回溯至原始对象、协议字段或受控记录。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-021,M-BTC-001,CoinJoin识别,实施“CoinJoin识别”时应优先保证可重现性和证据完整性，而不是追求最大覆盖率；无法满足前提时输出拒绝结论。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-022,M-BTC-001,路径分配模型,“路径分配模型”发生变更后，应重新执行影响分析、回归验证和人员授权确认，历史案件是否受影响必须形成书面结论。,P2,Bitcoin方法负责人,generated_unreviewed
-REQ-MBTC001-023,M-BTC-001,拒绝主体归属,“拒绝主体归属”的验收必须包含正常、边界、冲突、恶意和历史回归样本，并由未参与实现的人员独立复核。,P2,Bitcoin方法负责人,generated_unreviewed
+REQ-MBTC001-001,M-BTC-001,网络与链身份,运行必须记录网络 创世哈希 节点链参数和对象所属网络,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-002,M-BTC-001,节点版本,节点必须记录客户端 构建 配置 同步高度 模式和索引状态,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-003,M-BTC-001,区块头,区块头必须从原始80字节按规定端序解析六个字段,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-004,M-BTC-001,区块哈希,区块哈希必须从原始头双SHA-256计算并保留内部和显示形式,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-005,M-BTC-001,前序区块,前序区块必须保留原始32字节和显示值并单独处理创世对象,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-006,M-BTC-001,Merkle根,Merkle根必须从区块头提取并只在已验证范围内由交易重算,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-007,M-BTC-001,交易原始字节,每笔交易必须保存无损序列化字节 边界 字节数和哈希,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-008,M-BTC-001,txid与wtxid,必须按交易格式分别计算txid和wtxid且不得混用,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-009,M-BTC-001,输入引用,输入必须保存previous txid vout script sequence witness和coinbase例外,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-010,M-BTC-001,输出索引,输出必须保持原始顺序和零基索引并可回到原始字节,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-011,M-BTC-001,脚本类型,脚本类型只能按批准规则输出候选且必须保留原始script,P1,Bitcoin方法负责人,reviewed
+REQ-MBTC001-012,M-BTC-001,金额单位,金额运算必须使用整数satoshi且显示换算不得覆盖原值,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-013,M-BTC-001,coinbase,coinbase必须按全零previous txid和0xffffffff vout识别结构,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-014,M-BTC-001,手续费,非coinbase手续费只有在全部输入原值可得时才能计算否则为unknown,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-015,M-BTC-001,UTXO状态,UTXO状态必须绑定观察时点 链尖 节点和索引状态,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-016,M-BTC-001,确认数,确认数必须作为动态字段保存高度 链尖 时间和来源,P1,Bitcoin方法负责人,reviewed
+REQ-MBTC001-017,M-BTC-001,链重组,必须检测对象是否仍在最佳链并保留重组前后状态,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-018,M-BTC-001,RBF,RBF只描述信号和观察状态且不得推断替代目的或最终结果,P1,Bitcoin方法负责人,reviewed
+REQ-MBTC001-019,M-BTC-001,找零候选,找零识别在完成独立验证前不得由当前方法输出,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-020,M-BTC-001,多输入启发式,多输入不得被当前方法推断为共同主体控制,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-021,M-BTC-001,CoinJoin识别,CoinJoin不得由当前方法形成确定识别结论,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-022,M-BTC-001,路径分配模型,当前方法不得选择或暗示唯一资金路径分配模型,P0,Bitcoin方法负责人,reviewed
+REQ-MBTC001-023,M-BTC-001,拒绝主体归属,缺少独立链下授权证据和批准方法时必须拒绝主体归属,P0,Bitcoin方法负责人,reviewed
 REQ-MEVM001-001,M-EVM-001,Chain ID,“Chain ID”应被拆分为可验证步骤；每一步都要指定责任角色、前置条件、执行记录、异常分支和完成定义。,P0,EVM方法负责人,generated_unreviewed
 REQ-MEVM001-002,M-EVM-001,创世区块,对“创世区块”的判断不得仅依赖界面展示或供应商结论，关键事实应能够回溯至原始对象、协议字段或受控记录。,P0,EVM方法负责人,generated_unreviewed
 REQ-MEVM001-003,M-EVM-001,客户端版本,实施“客户端版本”时应优先保证可重现性和证据完整性，而不是追求最大覆盖率；无法满足前提时输出拒绝结论。,P0,EVM方法负责人,generated_unreviewed
