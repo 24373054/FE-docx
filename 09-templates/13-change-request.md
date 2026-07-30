@@ -1,12 +1,12 @@
 ---
 document_id: FRM-013
 title: 变更申请与影响分析表
-version: 3.0.0
-status: 受控模板
+version: 0.2.0
+status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 质量负责人
-effective_date: 2026-07-27
+owner: 配置管理员
+approver: 变更控制委员会（未成立）
+effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
 ---
@@ -208,3 +208,15 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次演练后的版本与兼容字段
+
+|字段|要求|
+|---|---|
+|变更状态|`proposed`、`impact_reviewed`、`approved`、`implemented`、`validated`、`released`、`rolled_back`或`rejected`|
+|变更前基线|提交、文档/Schema版本和对象哈希|
+|目标版本|变更后精确版本及兼容策略|
+|历史不可回写|说明既有证据包、报告和案件是否保持不可变|
+|兼容与迁移|读写兼容、迁移条件、失败行为和停止门|
+
+第一次演练见[`跨包Schema变更申请`](../validation-evidence/public/SIM-FORM-GOVERNANCE-001-V1/records/change-request.md)。当前只有提案和验证计划，未批准、未实施、未执行测试。

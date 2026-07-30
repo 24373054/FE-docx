@@ -1,0 +1,17 @@
+{
+  "record_id": "ENV-GT-BTC-GENESIS-001-V1",
+  "captured_at": "2026-07-30T00:59:14.4067908+08:00",
+  "git_head": "69f530b68ae3273d52be1749f2d416b03d01272f",
+  "git_version": "git version 2.51.0.windows.2",
+  "powershell_version": "7.6.4",
+  "python_version": "3.9.13",
+  "dotnet_runtime_version": "10.0.10",
+  "operating_system": "Microsoft Windows 10.0.26200",
+  "timezone": "China Standard Time",
+  "culture": "zh-CN",
+  "http_client": "System.Net.Http.HttpClient",
+  "calculation_runtime": "Python standard library hashlib and integer byte conversions",
+  "credentials_used": false,
+  "asset_control_performed": false,
+  "personal_or_case_data_used": false
+}

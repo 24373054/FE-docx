@@ -1,12 +1,12 @@
 ---
 document_id: FRM-009
 title: 工具验证记录
-version: 3.0.0
-status: 受控模板
+version: 0.3.0
+status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 质量负责人
-effective_date: 2026-07-27
+owner: 工具负责人
+approver: 项目发起人（未签批）
+effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
 ---
@@ -207,3 +207,29 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次实测后的强制补充字段
+
+|字段|要求|
+|---|---|
+|制品哈希状态|`recorded`、`not_available`或`not_applicable`|
+|制品哈希失败原因|无法固定可执行文件、运行时组件或在线服务版本时必须填写|
+|技术测试结果|与整体工具批准状态分开|
+|覆盖缺口|正常、边界、冲突、恶意、性能、安全和回归逐类状态|
+|运行时/供应链|操作系统、依赖、构建、获取位置和签名验证|
+|批准范围|明确输入、输出、链、方法、人员和禁止用途|
+
+第一次演练见[`工具验证记录`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/tool-validation.md)。PowerShell/.NET在单样本上结果正确，但无制品哈希、批准计划和负向测试，整体状态保持`blocked_not_validated`。
+
+## 10. 第二次在线服务冲突场景补充
+
+第二次演练见[`工具记录`](../validation-evidence/public/SIM-FORM-BTC-CONFLICT-001-V1/records/tool-validation.md)。验证对象必须分层：
+
+|对象类别|最低身份字段|
+|---|---|
+|`client_tool`|名称、版本、制品哈希、配置、构建或获取来源|
+|`runtime`|操作系统、运行时、依赖、签名或供应链状态|
+|`data_source`|运营方、端点、网络、观察时间、服务条款和批准状态|
+|`service_backend`|节点/客户端/版本可知性、同步状态、相互独立性；未知时显式记录|
+
+在线服务没有可取得的制品哈希时应填`not_applicable`或`not_available`及原因，不能留空或视为已验证。FRM-009仍缺公司角色和完整覆盖，本模板保持`模板草案（待实测）`。

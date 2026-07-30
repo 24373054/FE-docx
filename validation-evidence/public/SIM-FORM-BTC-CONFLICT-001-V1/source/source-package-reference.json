@@ -1,0 +1,39 @@
+{
+  "reference_type": "immutable_package_dependency",
+  "source_package_id": "VAL-METHOD-T1-PROBE-001",
+  "source_package_path": "../VAL-METHOD-T1-PROBE-001",
+  "source_manifest_sha256": "3e5b21df87d192489e8f7bf469fdc5c16b3f2cedbde413e0da374b013197e106",
+  "source_manifest_size_bytes": 3025,
+  "source_root_hash_algorithm": "sha256-sorted-path-lines-v1",
+  "source_root_hash": "8dc903d11c4206bc682caf6bba0dcfa9313f609df1699e1dae22e19882a7d35c",
+  "selected_objects": [
+    {
+      "object_id": "OBJ-T1P1-CAPTURE-001",
+      "path": "capture/public-endpoint-captures.json",
+      "sha256": "d6fcaabf8a32e79cc3df88183ed7fd8f165bb9b2cc408ea19f853dbbb2b76f1e",
+      "size_bytes": 9295
+    },
+    {
+      "object_id": "OBJ-T1P1-COMPARISON-001",
+      "path": "comparison/field-comparison.csv",
+      "sha256": "9bcb1f513665f1d5b059a28f9e497529abf9006ea25cb886325d7639e01a4757",
+      "size_bytes": 1818
+    },
+    {
+      "object_id": "OBJ-T1P1-REVIEW-001",
+      "path": "review/status.md",
+      "sha256": "6304294253a336aaec9509d9eb49dc1547cc093be7a426944e6bdc5d8452db10",
+      "size_bytes": 1836
+    },
+    {
+      "object_id": "OBJ-T1P1-SCOPE-001",
+      "path": "scope.md",
+      "sha256": "a3c992dfb4e608fb8629a2c09a3c4c75a4a0512e84eb951d06ead582b9e775f9",
+      "size_bytes": 2678
+    }
+  ],
+  "dependency_complete": false,
+  "dependency_note": "本包未复制父包原始捕获；复核和恢复必须同时取得完整父包。",
+  "verified_at": "2026-07-30T02:15:00+08:00",
+  "verified_by": "Codex workspace research session"
+}

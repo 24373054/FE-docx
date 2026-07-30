@@ -1,0 +1,20 @@
+{
+  "run_id": "SIM-FORM-GOVERNANCE-001-V1",
+  "executed_at": "2026-07-30T02:45:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "git_commit": "28d75d9ac112fcb8fedd3222eb45a8703f79aecb",
+  "workspace_os": "Windows",
+  "shell": "PowerShell 7.6.4",
+  "network_activity": "none",
+  "execution_mode": "read-only repository evidence review and template rehearsal",
+  "operator": "Codex workspace research session",
+  "company_named_operator": null,
+  "independent_human_reviewer": null,
+  "organization_approval": "not_present",
+  "sensitive_data_processed": false,
+  "limitations": [
+    "The rehearsal uses repository facts and public evidence only.",
+    "Historical generated drafts are referenced only as gap inputs.",
+    "No company identity, employee record, regulator submission, meeting attendance, or signature is invented."
+  ]
+}

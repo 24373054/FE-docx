@@ -1,0 +1,52 @@
+{
+  "ground_truth_id": "GT-BTC-GENESIS-001",
+  "version": "V1",
+  "status": "truth_prepared",
+  "calculation": "independent byte parsing with Python standard library",
+  "raw_block_size": 285,
+  "raw_block_sha256": "5299fac924b5a2fc19a88876a0042c19ac4d11fe69c3f66e47516e26185f9e99",
+  "header": {
+    "offset_start": 0,
+    "offset_end": 80,
+    "version": 1,
+    "previous_block_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "merkle_root": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+    "timestamp": 1231006505,
+    "bits_decimal": 486604799,
+    "bits_hex": "1d00ffff",
+    "nonce": 2083236893,
+    "block_hash": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+    "sha256d_internal": "6fe28c0ab6f1b372c1a6a246ae63f74f931e8365e15a089c68d6190000000000"
+  },
+  "block_transaction_count": 1,
+  "transaction_count_compactsize_bytes": 1,
+  "transaction": {
+    "offset_start": 81,
+    "offset_end": 285,
+    "size": 204,
+    "version": 1,
+    "vin_count": 1,
+    "previous_txid": "0000000000000000000000000000000000000000000000000000000000000000",
+    "previous_vout": 4294967295,
+    "script_sig_length": 77,
+    "script_sig_hex": "04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73",
+    "sequence": 4294967295,
+    "vout_count": 1,
+    "value_satoshi": 5000000000,
+    "pk_script_length": 67,
+    "pk_script_hex": "4104678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5fac",
+    "locktime": 0,
+    "txid": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+    "sha256d_internal": "3ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a"
+  },
+  "parse_end_offset": 285,
+  "trailing_bytes": 0,
+  "checks": {
+    "two_source_decoded_bytes_equal": true,
+    "parse_consumed_all_bytes": true,
+    "calculated_block_hash_matches_official_constant": true,
+    "transaction_count_is_one": true,
+    "single_transaction_merkle_root_equals_txid": true,
+    "calculated_merkle_root_matches_official_constant": true
+  }
+}

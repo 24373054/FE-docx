@@ -1,12 +1,12 @@
 ---
 document_id: FRM-014
 title: 人员培训、考核与授权记录
-version: 3.0.0
-status: 受控模板
+version: 0.2.0
+status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 质量负责人
-effective_date: 2026-07-27
+owner: 人员能力负责人
+approver: 质量负责人（未签批）
+effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
 ---
@@ -207,3 +207,15 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次演练后的计划与授权分层
+
+|字段|要求|
+|---|---|
+|记录用途|岗位缺口计划、个人培训记录、考核记录、授权决定、暂停或撤销|
+|候选状态|未指定、候选、在训、待考核、待批准、已授权、暂停或撤销|
+|前置门|身份、人事档案、独立性、方法、工具、导师和样本状态|
+|授权状态|`not_authorized`、`supervised_only`、`authorized_limited`、`authorized`、`suspended`或`revoked`|
+|授权证据ID|具名批准、范围、有效期和签名记录，不得只填人员编号|
+
+第一次演练见[`岗位授权缺口记录`](../validation-evidence/public/SIM-FORM-GOVERNANCE-001-V1/records/training-authorization.md)。公司自然人尚未指定，培训与考核均未执行，授权范围为`none`。

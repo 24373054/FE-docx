@@ -1,0 +1,20 @@
+{
+  "run_id": "SIM-FORM-BTC-CONFLICT-001-V1",
+  "executed_at": "2026-07-30T02:15:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "git_commit": "055429f34f961c533c2c179e55a72f26be5ccbc6",
+  "workspace_os": "Windows",
+  "shell": "PowerShell 7.6.4",
+  "network_activity": "none",
+  "execution_mode": "read-only re-ingest of an existing public evidence package",
+  "source_package_id": "VAL-METHOD-T1-PROBE-001",
+  "source_package_root_hash": "8dc903d11c4206bc682caf6bba0dcfa9313f609df1699e1dae22e19882a7d35c",
+  "operator": "Codex workspace research session",
+  "independent_human_reviewer": null,
+  "organization_authorization": "not_present",
+  "limitations": [
+    "No public endpoint was queried in this rehearsal.",
+    "The same research session prepared and self-checked the records.",
+    "This environment record does not identify a company-controlled workstation."
+  ]
+}

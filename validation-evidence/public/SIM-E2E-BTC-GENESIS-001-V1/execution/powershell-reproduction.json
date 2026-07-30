@@ -1,0 +1,23 @@
+{
+  "run_id": "RUN-SIM-BTC-GENESIS-PS-001",
+  "executed_at": "2026-07-30T01:51:49+08:00",
+  "runtime": "PowerShell 7.6.4",
+  "cryptographic_provider": "System.Security.Cryptography.SHA256",
+  "input_object_id": "OBJ-SIM-BTC-RAW-001",
+  "input_path": "raw/block.hex",
+  "input_file_sha256": "6f91a7dde963795146048aef2e347d02214edf6e0f841fc72950759c891e32bb",
+  "decoded_bytes": 285,
+  "tx_count": 1,
+  "block_hash": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+  "txid": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+  "merkle_root": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+  "txid_matches_merkle": true,
+  "expected_result_comparison": "passed",
+  "execution_scope": "deterministic reproduction only",
+  "not_proven": [
+    "independent human review",
+    "method validation",
+    "tool validation",
+    "production authorization"
+  ]
+}

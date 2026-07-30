@@ -1,0 +1,30 @@
+{
+  "capture_id": "CAP-GT-BTC-BLOCKSTREAM-RAW-001",
+  "request_method": "GET",
+  "request_url": "https://blockstream.info/api/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f/raw",
+  "started_at": "2026-07-30T00:58:28.3162153+08:00",
+  "ended_at": "2026-07-30T00:58:29.0580582+08:00",
+  "http_version": "1.1",
+  "status_code": 200,
+  "reason_phrase": "OK",
+  "response_headers": {
+    "Date": "Wed, 29 Jul 2026 16:58:28 GMT",
+    "Connection": "keep-alive",
+    "Cache-Control": "public, max-age=157784630",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-total-results",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-eval'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "no-referrer",
+    "X-Cache-Status": "HIT",
+    "Content-Type": "application/octet-stream",
+    "Content-Length": "285"
+  },
+  "response_body_representation": "raw/block.hex",
+  "response_body_encoding_in_package": "lowercase hexadecimal without prefix",
+  "decoded_body_size_bytes": 285,
+  "decoded_body_sha256": "5299fac924b5a2fc19a88876a0042c19ac4d11fe69c3f66e47516e26185f9e99"
+}

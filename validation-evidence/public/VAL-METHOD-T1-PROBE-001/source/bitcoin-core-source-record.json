@@ -1,0 +1,43 @@
+{
+  "source_record_id": "SRC-BTC-CORE-GENESIS-001",
+  "repository": "https://github.com/bitcoin/bitcoin",
+  "ref": "refs/heads/master",
+  "resolved_commit": "7e5952b0aa04429c88d8ad990f35862421c4fa9d",
+  "path": "src/kernel/chainparams.cpp",
+  "retrieved_at": "2026-07-30T00:32:53.3752432+08:00",
+  "retrieval_url": "https://raw.githubusercontent.com/bitcoin/bitcoin/7e5952b0aa04429c88d8ad990f35862421c4fa9d/src/kernel/chainparams.cpp",
+  "remote_body_encoding": "UTF-8",
+  "remote_body_size_bytes": 34649,
+  "remote_body_sha256": "f50c52551ed26e077c058bacd7ed337729ab467e1ba6e98f945bc7815f30ce3e",
+  "relevant_lines": [
+    {
+      "line": 54,
+      "text": "    genesis.hashMerkleRoot = BlockMerkleRoot(genesis);"
+    },
+    {
+      "line": 63,
+      "text": " * CBlock(hash=000000000019d6, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=4a5e1e, nTime=1231006505, nBits=1d00ffff, nNonce=2083236893, vtx=1)"
+    },
+    {
+      "line": 158,
+      "text": "        genesis = CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);"
+    },
+    {
+      "line": 159,
+      "text": "        consensus.hashGenesisBlock = genesis.GetHash();"
+    },
+    {
+      "line": 160,
+      "text": "        assert(consensus.hashGenesisBlock == uint256{\"000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f\"});"
+    },
+    {
+      "line": 161,
+      "text": "        assert(genesis.hashMerkleRoot == uint256{\"4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b\"});"
+    }
+  ],
+  "limitations": [
+    "完整远程源码正文未存入本证据包；只能使用固定提交URL、远程正文哈希和摘录复核",
+    "官方实现常量不等同于对本次公共API响应的独立GT2解析",
+    "本记录未经具名第二人员复核"
+  ]
+}

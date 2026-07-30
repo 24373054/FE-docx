@@ -1,12 +1,12 @@
 ---
 document_id: FRM-015
 title: 主管机关问题与答复登记表
-version: 3.0.0
-status: 受控模板
+version: 0.2.0
+status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 质量负责人
-effective_date: 2026-07-27
+owner: 合规负责人
+approver: 项目发起人（未签批）
+effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
 ---
@@ -207,3 +207,15 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次演练后的沟通生命周期
+
+|字段|要求|
+|---|---|
+|问题阶段|`draft`、`internally_approved`、`submitted`、`delivered`、`responded`、`closed`或`withdrawn`|
+|机关身份核验|具体机关、部门、联系人/渠道及核验方式|
+|送达证据状态|`not_submitted`、`submitted_unconfirmed`或`delivered`|
+|答复状态|`not_received`、`oral_unconfirmed`、`minutes_pending`或`written_received`|
+|答复依赖等级|允许内部参考、需法律意见、需再次书面确认或可进入申报依据|
+
+第一次演练见[`主管机关问题记录`](../validation-evidence/public/SIM-FORM-GOVERNANCE-001-V1/records/regulatory-query.md)。问题包已准备但未提交，不存在送达或答复；未提交时不得伪造必填时间和答复原文。

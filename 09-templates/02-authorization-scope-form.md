@@ -1,12 +1,12 @@
 ---
 document_id: FRM-002
 title: 授权与范围确认表
-version: 3.0.0
-status: 受控模板
+version: 0.3.0
+status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 质量负责人
-effective_date: 2026-07-27
+owner: 合规负责人
+approver: 项目发起人（未签批）
+effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
 ---
@@ -200,3 +200,26 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次实测后的强制补充字段
+
+|字段|要求|
+|---|---|
+|授权类型|`public-source-research`、`contract`、`entrustment`、`statutory-order`或其他受控枚举|
+|授权证据位置|可访问的书面对象ID、文件路径和SHA-256；不得只写“领导同意”或会话上下文|
+|授权核验状态|`verified`、`limited`、`blocked`；与活动技术结果分开|
+|数据主体/控制方边界|公开数据也需说明来源控制方、访问条件和限制|
+|批准适用版本|关联具体采集计划、方法、包类型和接收范围|
+
+第一次演练记录见[`SIM-E2E-BTC-GENESIS-001-V1`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/authorization.md)。演练仅完成公开研究范围登记，没有具名自然人批准，结果为`partial_pass`。
+
+## 10. 第二次冲突场景演练
+
+第二次演练见[`授权记录`](../validation-evidence/public/SIM-FORM-BTC-CONFLICT-001-V1/records/authorization.md)。演练证明：
+
+- “仓库研究任务可执行”不等于“公司具名授权已取得”；
+- 授权核验状态必须与技术活动结果和发布决定分开；
+- 既有公开包再摄取必须明确本次没有新网络采集；
+- 新端点、新链、新采集、真实案件或对外用途必须重新授权。
+
+字段在第二场景中可填写，但两次记录均没有公司具名授权人和独立复核人。本模板保持`模板草案（待实测）`，等待角色分离演练。

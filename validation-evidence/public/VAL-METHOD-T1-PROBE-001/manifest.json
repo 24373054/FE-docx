@@ -1,0 +1,86 @@
+{
+  "schema_version": "3.0.0",
+  "package_id": "VAL-METHOD-T1-PROBE-001",
+  "case_id": "PUBLIC-BTC-GENESIS-001",
+  "created_at": "2026-07-30T00:37:06.3839181+08:00",
+  "created_by": "Codex workspace research session",
+  "classification": "public",
+  "objects": [
+    {
+      "object_id": "OBJ-T1P1-CAPTURE-001",
+      "object_type": "record",
+      "path": "capture/public-endpoint-captures.json",
+      "sha256": "d6fcaabf8a32e79cc3df88183ed7fd8f165bb9b2cc408ea19f853dbbb2b76f1e",
+      "size_bytes": 9295,
+      "source_id": "PUBLIC-ENDPOINTS",
+      "tool_id": "System.Net.Http.HttpClient",
+      "method_id": "VAL-METHOD-T1-PROBE",
+      "created_at": "2026-07-30T00:33:38.3371561+08:00"
+    },
+    {
+      "object_id": "OBJ-T1P1-COMPARISON-001",
+      "object_type": "derived",
+      "path": "comparison/field-comparison.csv",
+      "sha256": "9bcb1f513665f1d5b059a28f9e497529abf9006ea25cb886325d7639e01a4757",
+      "size_bytes": 1818,
+      "source_id": "PUBLIC-ENDPOINTS-AND-BTC-CORE",
+      "parent_ids": [
+        "OBJ-T1P1-CAPTURE-001",
+        "OBJ-T1P1-SOURCE-001"
+      ],
+      "tool_id": null,
+      "method_id": "VAL-METHOD-T1-PROBE",
+      "created_at": "2026-07-30T00:37:06.3839181+08:00"
+    },
+    {
+      "object_id": "OBJ-T1P1-ENV-001",
+      "object_type": "record",
+      "path": "environment/environment.json",
+      "sha256": "07a735938033e627e01a747b328b4fd7e9549a8103ae4d39928cb193e8e5074e",
+      "size_bytes": 667,
+      "source_id": "LOCAL-RUNTIME",
+      "tool_id": null,
+      "method_id": "VAL-METHOD-T1-PROBE",
+      "created_at": "2026-07-30T00:34:17.6182291+08:00"
+    },
+    {
+      "object_id": "OBJ-T1P1-REVIEW-001",
+      "object_type": "report",
+      "path": "review/status.md",
+      "sha256": "6304294253a336aaec9509d9eb49dc1547cc093be7a426944e6bdc5d8452db10",
+      "size_bytes": 1836,
+      "source_id": "VALIDATION-RUN",
+      "parent_ids": [
+        "OBJ-T1P1-COMPARISON-001",
+        "OBJ-T1P1-SCOPE-001"
+      ],
+      "tool_id": null,
+      "method_id": "VAL-METHOD-T1-PROBE",
+      "created_at": "2026-07-30T00:37:06.3839181+08:00"
+    },
+    {
+      "object_id": "OBJ-T1P1-SCOPE-001",
+      "object_type": "record",
+      "path": "scope.md",
+      "sha256": "a3c992dfb4e608fb8629a2c09a3c4c75a4a0512e84eb951d06ead582b9e775f9",
+      "size_bytes": 2678,
+      "source_id": "VALIDATION-RUN",
+      "tool_id": null,
+      "method_id": "VAL-METHOD-T1-PROBE",
+      "created_at": "2026-07-30T00:37:06.3839181+08:00"
+    },
+    {
+      "object_id": "OBJ-T1P1-SOURCE-001",
+      "object_type": "record",
+      "path": "source/bitcoin-core-source-record.json",
+      "sha256": "675bec03106240b50ea6c844b44a8b949983d7f6aa68bcb54a42a511018191b9",
+      "size_bytes": 1776,
+      "source_id": "BITCOIN-CORE-OFFICIAL-GITHUB",
+      "tool_id": "git-and-System.Net.Http",
+      "method_id": "VAL-METHOD-T1-PROBE",
+      "created_at": "2026-07-30T00:32:53.3752432+08:00"
+    }
+  ],
+  "root_hash": "8dc903d11c4206bc682caf6bba0dcfa9313f609df1699e1dae22e19882a7d35c",
+  "signatures": []
+}

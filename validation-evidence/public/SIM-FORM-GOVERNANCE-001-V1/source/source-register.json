@@ -1,0 +1,100 @@
+{
+  "reference_type": "git_commit_dependency",
+  "git_commit": "28d75d9ac112fcb8fedd3222eb45a8703f79aecb",
+  "sources": [
+    {
+      "path": "00-governance/09-management-decision-pack.md",
+      "sha256": "30f0159541dc19e9a20f917f0a7de274fd12ebd71d590cb187b15e0afbe3c9ce",
+      "size_bytes": 18015,
+      "maturity": "待签批治理提案",
+      "use": ["FRM-001", "FRM-014", "FRM-016"]
+    },
+    {
+      "path": "01-regulatory/10-regulator-engagement.md",
+      "sha256": "d453c1d73502e8c31c17f0101cd217d5d7d45ff76f44398da93045372906c14b",
+      "size_bytes": 20280,
+      "maturity": "受控草案",
+      "use": ["FRM-015"]
+    },
+    {
+      "path": "05-quality/09-nonconforming-capa.md",
+      "sha256": "f96b4ee554361e266e25a6693104c7143a1cf41896bfc2aec3dcd2c9284e88b8",
+      "size_bytes": 36183,
+      "maturity": "历史生成稿（待重构）",
+      "use": ["FRM-012"]
+    },
+    {
+      "path": "07-organization/03-competence-matrix.md",
+      "sha256": "857feb2d7a16400cb09f268a779d84c530db2cd6331d25826cc3c0b667fd3a16",
+      "size_bytes": 37709,
+      "maturity": "历史生成稿（待重构）",
+      "use": ["FRM-014"]
+    },
+    {
+      "path": "07-organization/04-training-authorization.md",
+      "sha256": "91d2af0f4c8b06a9687096cbb3734e39805c21b5fcd60ff6d5b6ac34a18c24fb",
+      "size_bytes": 38047,
+      "maturity": "历史生成稿（待重构）",
+      "use": ["FRM-014"]
+    },
+    {
+      "path": "schemas/evidence-manifest.schema.json",
+      "sha256": "547d3382f370d5868398ac968141229ac7ea9a1a3a614fc726a0376a16e0cbec",
+      "size_bytes": 3026,
+      "maturity": "机器可读Schema草案",
+      "use": ["FRM-013"]
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "0dd558aa785778aec83bb19fc6a96d613283227a392a1adecd48a29bc1dfad56",
+      "size_bytes": 147,
+      "maturity": "版本控制配置",
+      "use": ["FRM-012"]
+    },
+    {
+      "path": "validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/manifest.json",
+      "sha256": "971e7915bebc9b2b535b40b9f33062ab4c4c69d080156ee02daaa9f64497dbc0",
+      "size_bytes": 6099,
+      "maturity": "公开模拟证据",
+      "use": ["FRM-005", "FRM-011", "FRM-012"]
+    },
+    {
+      "path": "validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/report/internal-simulation-report.md",
+      "sha256": "2636ca3fbe0b5c2599bde112df200b05f48cf4d538a3b0dcb1ccb6c66f1e324a",
+      "size_bytes": 3204,
+      "maturity": "内部模拟报告",
+      "use": ["FRM-011"]
+    },
+    {
+      "path": "validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/acquisition.md",
+      "sha256": "a9b3eeadd35e724540785021d3d899487e7cef9bb3213df6f9051719321fb0ae",
+      "size_bytes": 2142,
+      "maturity": "模板演练记录",
+      "use": ["FRM-012"]
+    },
+    {
+      "path": "validation-evidence/public/SIM-FORM-BTC-CONFLICT-001-V1/manifest.json",
+      "sha256": "45736a0041a90bd0110c5e247872a0e95fdf0f286b2b386b37c907f2d4102701",
+      "size_bytes": 5211,
+      "maturity": "公开模拟证据",
+      "use": ["FRM-006", "FRM-013"]
+    },
+    {
+      "path": "validation-evidence/public/VAL-METHOD-T1-PROBE-001/comparison/field-comparison.csv",
+      "sha256": "9bcb1f513665f1d5b059a28f9e497529abf9006ea25cb886325d7639e01a4757",
+      "size_bytes": 1818,
+      "maturity": "阻断探针证据",
+      "use": ["FRM-006", "FRM-007"]
+    },
+    {
+      "path": "validation-evidence/public/VAL-METHOD-T1-PROBE-001/capture/public-endpoint-captures.json",
+      "sha256": "d6fcaabf8a32e79cc3df88183ed7fd8f165bb9b2cc408ea19f853dbbb2b76f1e",
+      "size_bytes": 9295,
+      "maturity": "阻断探针证据",
+      "use": ["FRM-007"]
+    }
+  ],
+  "dependency_mode": "external-controlled",
+  "verified_at": "2026-07-30T02:45:00+08:00",
+  "verified_by": "Codex workspace research session"
+}

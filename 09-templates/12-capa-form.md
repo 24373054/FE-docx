@@ -1,12 +1,12 @@
 ---
 document_id: FRM-012
 title: 不符合与CAPA记录
-version: 3.0.0
-status: 受控模板
+version: 0.2.0
+status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 质量负责人
-effective_date: 2026-07-27
+owner: 质量负责人
+approver: 项目发起人（未签批）
+effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
 ---
@@ -207,3 +207,15 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次演练后的分级与基线字段
+
+|字段|要求|
+|---|---|
+|记录资格|`event_record`、`nonconformity_candidate`、`formal_nonconformity`或`formal_capa`|
+|冻结影响|错误是否进入manifest、提交、报告、签名、交付或历史案件|
+|分级批准|谁在何时把候选事件正式分级并确定P1/P2/P3|
+|措施状态|纠正、纠正措施、预防措施和风险接受分别记录|
+|关闭门|根因复核、措施完成、观察期、有效性证据和具名质量批准缺一不可|
+
+第一次演练见[`CAPA候选记录`](../validation-evidence/public/SIM-FORM-GOVERNANCE-001-V1/records/capa.md)。错误hex在manifest前被拦截，当前纠正通过，但CAPA未正式立项、独立复核或关闭。

@@ -1,0 +1,135 @@
+{
+  "schema_version": "3.0.0",
+  "package_id": "GT-BTC-GENESIS-001-V1",
+  "case_id": "PUBLIC-BTC-GENESIS-GT2",
+  "created_at": "2026-07-30T01:02:41.3245792+08:00",
+  "created_by": "Codex workspace research session",
+  "classification": "public",
+  "objects": [
+    {
+      "object_id": "OBJ-GT-BTC-ALGORITHM-001",
+      "object_type": "record",
+      "path": "calculation/algorithm.md",
+      "sha256": "b459901d2a085508a2282bd98d51921e4ce6fc460b49d22cdaf6a9b52fdfe4a6",
+      "size_bytes": 2675,
+      "source_id": "BITCOIN-SERIALIZATION-RULES",
+      "tool_id": null,
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T01:02:41.3245792+08:00"
+    },
+    {
+      "object_id": "OBJ-GT-BTC-RESULT-001",
+      "object_type": "derived",
+      "path": "calculation/result.json",
+      "sha256": "53ce9b3e96981641cb22659bc357353440f46045453120ec8ee97bfb25e602f8",
+      "size_bytes": 2197,
+      "source_id": "FROZEN-BTC-GENESIS-BYTES",
+      "parent_ids": [
+        "OBJ-GT-BTC-RAW-001",
+        "OBJ-GT-BTC-ALGORITHM-001",
+        "OBJ-GT-BTC-OFFICIAL-001"
+      ],
+      "tool_id": "Python-3.9.13-stdlib",
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T01:02:41.3245792+08:00"
+    },
+    {
+      "object_id": "OBJ-GT-BTC-ENV-001",
+      "object_type": "record",
+      "path": "environment/environment.json",
+      "sha256": "cf1922a041192841150bd4214d47daf4527878d7a39e7a501af59f7a953e83d4",
+      "size_bytes": 663,
+      "source_id": "LOCAL-RUNTIME",
+      "tool_id": null,
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T00:59:14.4067908+08:00"
+    },
+    {
+      "object_id": "OBJ-GT-BTC-OFFICIAL-001",
+      "object_type": "record",
+      "path": "official/bitcoin-core-reference.json",
+      "sha256": "4e6f5c418b8ff88f70ce1d16fd97233c1cd1df229b89f6d95b45e2bcf2e38759",
+      "size_bytes": 1179,
+      "source_id": "BITCOIN-CORE-OFFICIAL-GITHUB",
+      "tool_id": null,
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T01:02:41.3245792+08:00"
+    },
+    {
+      "object_id": "OBJ-GT-BTC-RAW-001",
+      "object_type": "raw",
+      "path": "raw/block.hex",
+      "sha256": "6f91a7dde963795146048aef2e347d02214edf6e0f841fc72950759c891e32bb",
+      "size_bytes": 571,
+      "source_id": "BLOCKSTREAM-AND-BLOCKCHAIN-INFO",
+      "parent_ids": [
+        "OBJ-GT-BTC-SOURCE-001",
+        "OBJ-GT-BTC-SOURCE-002"
+      ],
+      "tool_id": null,
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T01:00:20.7569164+08:00"
+    },
+    {
+      "object_id": "OBJ-GT-BTC-REVIEW-001",
+      "object_type": "report",
+      "path": "review/status.md",
+      "sha256": "4ffea9697cd8e0512592e9d9dc229d43197756a484fe47510899c256407956b6",
+      "size_bytes": 1938,
+      "source_id": "GROUND-TRUTH-PREPARATION",
+      "parent_ids": [
+        "OBJ-GT-BTC-RESULT-001",
+        "OBJ-GT-BTC-SCOPE-001"
+      ],
+      "tool_id": null,
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T01:02:41.3245792+08:00"
+    },
+    {
+      "object_id": "OBJ-GT-BTC-SCOPE-001",
+      "object_type": "record",
+      "path": "scope.md",
+      "sha256": "ce28b38de7154fbbb021acda90081e15c71f18d71e4989d3e29a545516aaba34",
+      "size_bytes": 2524,
+      "source_id": "GROUND-TRUTH-PREPARATION",
+      "tool_id": null,
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T01:02:41.3245792+08:00"
+    },
+    {
+      "object_id": "OBJ-GT-BTC-SOURCE-FAIL-001",
+      "object_type": "record",
+      "path": "source/alternate-source-failure.json",
+      "sha256": "dd2dad0bd22830c95d58b35a11d50adb2cfb8e8cbf72bbd2431a32ebff106a2c",
+      "size_bytes": 599,
+      "source_id": "MEMPOOL-SPACE",
+      "tool_id": "System.Net.Http.HttpClient",
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T00:59:41.7307210+08:00"
+    },
+    {
+      "object_id": "OBJ-GT-BTC-SOURCE-002",
+      "object_type": "record",
+      "path": "source/blockchain-info-hex-capture.json",
+      "sha256": "414a13076f3a44787be5fd625beac03ba43143fed81a137050743132095b4eb4",
+      "size_bytes": 1646,
+      "source_id": "BLOCKCHAIN-INFO",
+      "tool_id": "System.Net.Http.HttpClient",
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T01:00:20.7569164+08:00"
+    },
+    {
+      "object_id": "OBJ-GT-BTC-SOURCE-001",
+      "object_type": "record",
+      "path": "source/blockstream-binary-capture.json",
+      "sha256": "3de4a8c5b9e453c28412a8f2e896517d59f4a3cbe56573e6e2901ceca399efe6",
+      "size_bytes": 1407,
+      "source_id": "BLOCKSTREAM-ESPLORA",
+      "tool_id": "System.Net.Http.HttpClient",
+      "method_id": "GT2-BTC-BYTE-PARSE",
+      "created_at": "2026-07-30T00:58:29.0580582+08:00"
+    }
+  ],
+  "root_hash": "fd1911a139f4876ed6c170fdbd500d0a7f80ba9951adc4dd2fa849f37b2620c3",
+  "signatures": []
+}

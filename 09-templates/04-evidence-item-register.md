@@ -1,12 +1,12 @@
 ---
 document_id: FRM-004
 title: 证据对象登记表
-version: 3.0.0
-status: 受控模板
+version: 0.3.0
+status: 模板草案（待实测）
 document_type: 受控模板
-owner: 记录责任人
-approver: 质量负责人
-effective_date: 2026-07-27
+owner: 证据管理员
+approver: 项目发起人（未签批）
+effective_date: 尚未生效
 review_cycle: 每6个月或重大法规、协议、系统、人员、场所变化时
 classification: 内部受控
 ---
@@ -215,3 +215,31 @@ classification: 内部受控
 - 保存期限、访问权限和销毁方式由案件合同、法律要求和质量手册共同确定。
 - 记录导出时生成不可变PDF或机器可读快照，并登记哈希。
 - 对外提供前执行脱敏和授权审查；未经批准不得包含密钥、凭据或无关个人信息。
+
+## 9. 第一次实测后的强制补充字段
+
+|字段|要求|
+|---|---|
+|包ID与Schema版本|对象属于哪个包及使用哪个Schema|
+|逻辑对象/文件对象|明确一个逻辑证据项是否对应多个文件或一个文件被多个逻辑对象引用|
+|值状态|`known`、`unknown`、`not_applicable`、`redacted`或`conflicted`及原因|
+|根哈希算法|当前公开包为`sha256-sorted-path-lines-v1`；与对象SHA-256分开|
+|自引用处理|manifest和登记表自身是否进入对象清单及避免自哈希循环的规则|
+|父对象完整性|派生对象列出全部直接父对象并校验不存在孤儿或环|
+
+第一次演练见[`证据项登记`](../validation-evidence/public/SIM-E2E-BTC-GENESIS-001-V1/records/evidence-register.md)。本模板能够登记文件对象，但对包级字段和自引用规则不足，结果为`partial_pass`。
+
+## 10. 第二次跨包依赖场景补充
+
+第二次演练见[`证据对象登记`](../validation-evidence/public/SIM-FORM-BTC-CONFLICT-001-V1/records/evidence-register.md)。新增强制字段：
+
+|字段|要求|
+|---|---|
+|父包ID|跨包派生时记录不可变包标识|
+|父包manifest SHA-256|验证引用的是哪个manifest精确字节版本|
+|父包root hash|验证父包对象集合与排序算法结果|
+|外部父对象ID|使用`<package_id>#<object_id>`或后续Schema批准格式|
+|依赖模式|`embedded`、`co-delivered`、`external-controlled`或`reference-only`|
+|恢复要求|说明单包能否恢复以及缺少父包时必须停止的操作|
+
+当前Schema 3.0.0不能机器强制跨包引用，因此第二次结果仍为`partial_pass`。本模板保持`模板草案（待实测）`，并把Schema修订列为前置项。
